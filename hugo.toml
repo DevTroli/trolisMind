@@ -1,0 +1,7 @@
+baseURL = "https://example.org/"
+languageCode = "pt-br"
+title = "Troli's Mind"
+
+[module]
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
