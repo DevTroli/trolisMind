@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="posttype-page">
+  <header>
+    <h1>Posts {{ .Title | title }}</h1>
+  </header>
+
+  <!-- Filtra posts por tipo -->
+  {{ $posttype := .File.BaseFileName }}
+  {{ $posts := where site.RegularPages "Params.posttype" "intersect" (slice $posttype) }}
+
+  <section class="posts-list">
+    {{ range $posts }}
+      <article class="post-preview">
+        <!-- Título primeiro -->
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        
+        <!-- Data embaixo (já que o tipo é óbvio pela página) -->
+        <div class="preview-meta">
+          <time>{{ .Date.Format "02 Jan 2006" }}</time>
+        </div>        
+     </article>
+    {{ end }}
+  </section>
+</div>
+{{ end }}
+

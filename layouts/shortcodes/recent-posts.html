@@ -1,0 +1,16 @@
+{{ $count := .Get "count" | default 6 }}
+
+<div class="recent-posts">
+  {{ range first $count site.RegularPages }}
+    <article class="post-card">
+      <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+      <div class="post-meta">
+        <time>{{ .Date.Format "02 Jan 2006" }}</time>
+        {{ if .Params.posttype }}
+          <span class="post-type">{{ index .Params.posttype 0 | title }}</span>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+</div>
+

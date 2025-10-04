@@ -1,0 +1,30 @@
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ if gt (len $posts) 0 }}
+  <ul class="posts-list">
+    {{ range $posts }}
+      <li>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <small>
+          {{ .Date.Format "02 Jan 2006" }}
+          {{ with .Params.posttype }} | <span>{{ index . 0 | title }}</span>{{ end }}
+        </small>
+        {{ with .Params.description }}
+          <div class="description">{{ . }}</div>
+        {{ end }}
+        {{ with .Params.tags }}
+          <small>
+            Tags:
+            {{ range . }}<span class="tag">#{{ . }}</span> {{ end }}
+          </small>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <div align="center" style="margin:2em 0">
+    <h2>🚧 Nenhum post disponível ainda</h2>
+    <p>Assim que houver novidades, este espaço será preenchido com experiências tech de verdade!</p>
+  </div>
+{{ end }}
+
+

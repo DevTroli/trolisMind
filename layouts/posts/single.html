@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="post">
+  <!-- Cabeçalho organizado -->
+  <header>
+    <h1>{{ .Title }}</h1>
+    
+    <!-- Data e tipo-->
+    <div class="post-meta">
+      <time>{{ .Date.Format "02 Jan 2006" }}</time>
+      {{ if .Params.posttype }}
+        <span class="post-type">{{ index .Params.posttype 0 | title }}</span>
+      {{ end }}
+    </div>
+    
+  </header>
+
+  <!-- Conteúdo do post -->
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <!-- Tags no final -->
+  {{ if .Params.tags }}
+    <footer class="tags">
+      {{ range .Params.tags }}
+        <span class="tag">#{{ . }}</span>
+      {{ end }}
+    </footer>
+  {{ end }}
+</article>
+{{ end }}
+
