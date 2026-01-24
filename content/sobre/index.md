@@ -3,7 +3,7 @@ title: "Sobre Mim"
 date: 2025-10-03T11:05:26-03:00
 type: "page"
 description: "Página institucional"
-draft: true
+draft: false
 ---
 
 ## Prazer, eu sou o Troli 🤝
