@@ -1,0 +1,16 @@
+{{ if .Page.Params.tags }}
+<div
+  class="hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800"
+>
+  <span
+    class="hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300"
+    >Tags:
+  </span>
+  {{ range .Page.Params.tags }}
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#{{ . }}</span
+  >
+  {{ end }}
+</div>
+{{ end }}

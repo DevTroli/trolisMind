@@ -1,26 +1,61 @@
 {{ define "main" }}
-<div class="posttype-page">
-  <header>
-    <h1>Posts {{ .Title | title }}</h1>
+<div class="hx-mx-auto hx-max-w-screen-xl hx-px-6 hx-py-12">
+  <header class="hx-mb-12">
+    <h1 class="hx-text-4xl hx-font-bold hx-mb-4">{{ .Title }}</h1>
+    <p class="hx-text-lg hx-text-gray-600 dark:hx-text-gray-400">
+      Todos os posts desta categoria
+    </p>
   </header>
 
-  <!-- Filtra posts por tipo -->
-  {{ $posttype := .File.BaseFileName }}
-  {{ $posts := where site.RegularPages "Params.posttype" "intersect" (slice $posttype) }}
+  {{ $currentPosttype := lower .Title }} {{ $posts := where site.RegularPages
+  "Section" "posts" }} {{ $filteredPosts := slice }} {{ range $posts }} {{
+  $currentPost := . }} {{ if .Params.posttype }} {{ range .Params.posttype }} {{
+  if eq (lower .) $currentPosttype }} {{ $filteredPosts = $filteredPosts |
+  append $currentPost }} {{ end }} {{ end }} {{ end }} {{ end }} {{ if gt (len
+  $filteredPosts) 0 }}
+  <ul class="hx-space-y-8">
+    {{ range $filteredPosts }}
+    <li class="hx-border-b hx-border-gray-200 dark:hx-border-gray-800 hx-pb-8">
+      <h3 class="hx-text-2xl hx-font-semibold hx-mb-2">
+        <a
+          href="{{ .RelPermalink }}"
+          class="hover:hx-text-blue-600 dark:hover:hx-text-blue-400"
+        >
+          {{ .Title }}
+        </a>
+      </h3>
 
-  <section class="posts-list">
-    {{ range $posts }}
-      <article class="post-preview">
-        <!-- Título primeiro -->
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        
-        <!-- Data embaixo (já que o tipo é óbvio pela página) -->
-        <div class="preview-meta">
-          <time>{{ .Date.Format "02 Jan 2006" }}</time>
-        </div>        
-     </article>
+      <small class="hx-text-sm hx-text-gray-500 hx-mb-3 hx-block">
+        {{ .Date.Format "02 Jan 2006" }} {{ with .Params.posttype }} |
+        <span>{{ index . 0 | title }}</span>{{ end }}
+      </small>
+
+      {{ with .Params.description }}
+      <div class="hx-text-gray-700 dark:hx-text-gray-300 hx-mb-3">{{ . }}</div>
+      {{ end }} {{ with .Params.tags }}
+      <small class="hx-text-sm hx-text-gray-500">
+        Tags: {{ range . }}<span class="hx-mr-2">#{{ . }}</span>{{ end }}
+      </small>
+      {{ end }}
+    </li>
     {{ end }}
-  </section>
+  </ul>
+  {{ else }}
+  <div class="hx-text-center hx-py-16">
+    <div class="hx-text-6xl hx-mb-4">🚧</div>
+    <h2 class="hx-text-2xl hx-font-semibold hx-mb-3">
+      Nenhum post nesta categoria ainda
+    </h2>
+    <p class="hx-text-gray-600 dark:hx-text-gray-400 hx-mb-6">
+      Assim que houver novidades, este espaço será preenchido!
+    </p>
+    <a
+      href="/"
+      class="hx-inline-block hx-px-6 hx-py-3 hx-bg-blue-600 hover:hx-bg-blue-700 hx-text-white hx-rounded"
+    >
+      ← Voltar para home
+    </a>
+  </div>
+  {{ end }}
 </div>
 {{ end }}
-

@@ -3,13 +3,16 @@ title: "Você não é perfeccionista, você é um medroso com uma desculpa"
 description: "Por que 15 projetos na gaveta não fazem de você um desenvolvedor, fazem de você um covarde organizado."
 date: 2026-01-23T11:14:25-03:00
 author: "Troli"
-posttype: ["carrernotes"]
+posttype: ["careernotes"]
 milestone: []    # Opcional: qual saga editorial pertence
 roadmap: []      # Opcional: qual guia/roadmap se relaciona
 tags: ["mvp", "carreira", "mentalidade", "soft-skills"]
 type: "page"
-draft: true
+layout: "single"
+draft: false
 ---
+
+{{< meta-data >}}
 
 Nesse texto tento te fazer uma provocação necessária para desenvolvedores presos no ciclo do perfeccionismo paralisante, pois precisamos de mais MVPs imperfeitos no ar e menos produtos perfeitos no HD, Ainda mais porque o alvo da critica desse post sou exatamente eu. Mantive engavetada por muito a ideia desse blog que ficou apenas no meu localhost, pelo medo do fracasso e de achar que não fazia sentido fazer algo assim então por meses não consegui fazer o 1° post nem mesmo fazer um deploy que tocasse o mundo real, pois fiz um planejamento enorme, documentei demais como se procastinasse para esse projeto se tornar tangivel e acabei ficando paralisado.
 
@@ -99,3 +102,7 @@ Hora de fazer um deploy. Mesmo que seja só para ver o que acontece!
 [Lean Startup](https://www.diwe.com.br/blog/por-que-a-lean-startup-muda-tudo)
 [Method Fail Fast](https://www.acceptmission.com/pt/blog/fail-fast-learn-faster/)
 [Engenharia Empirica](https://zup.com.br/blog/o-que-e-engenharia-de-software-empirica/)
+
+---
+
+{{< tags >}}
