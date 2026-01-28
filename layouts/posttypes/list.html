@@ -1,41 +1,139 @@
 {{ define "main" }}
+
+<!-- 🐛 DEBUG - REMOVER DEPOIS -->
+<div
+  style="
+    background: #ffeb3b;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid red;
+    color: black;
+    font-family: monospace;
+  "
+>
+  <h3 style="color: red">🔍 Debug Info:</h3>
+  <p><strong>Title:</strong> {{ .Title }}</p>
+  <p><strong>Lowercase Title:</strong> {{ lower .Title }}</p>
+  <p><strong>Section:</strong> {{ .Section }}</p>
+  <p><strong>Type:</strong> {{ .Type }}</p>
+  <p><strong>Kind:</strong> {{ .Kind }}</p>
+
+  <hr style="border: 1px solid #000; margin: 1rem 0" />
+
+  <p><strong>Total RegularPages:</strong> {{ len site.RegularPages }}</p>
+
+  {{ $allPosts := where site.RegularPages "Section" "posts" }}
+  <p><strong>Posts na seção "posts":</strong> {{ len $allPosts }}</p>
+
+  <h4 style="color: blue; margin-top: 1rem">Posts encontrados:</h4>
+  {{ if gt (len $allPosts) 0 }} {{ range $allPosts }}
+  <div
+    style="
+      border: 2px solid #333;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      background: white;
+    "
+  >
+    <strong style="color: green">TÍTULO: {{ .Title }}</strong><br />
+    <strong>Draft:</strong> {{ .Draft }}<br />
+    <strong>Type:</strong> {{ .Type }}<br />
+    <strong>Section:</strong> {{ .Section }}<br />
+    <strong>Posttypes:</strong> {{ .Params.posttype }}<br />
+    <hr style="margin: 0.5rem 0" />
+    {{ $currentPosttype := "careernotes" }}
+    <strong style="color: purple">Testando match com "careernotes":</strong
+    ><br />
+    {{ if .Params.posttype }} {{ range .Params.posttype }} {{ $posttype := lower
+    . }}
+    <span style="color: blue">
+      Comparando: "{{ $posttype }}" == "{{ $currentPosttype }}" → Resultado:
+      <strong
+        style="color: {{ if eq $posttype $currentPosttype }}green{{ else }}red{{ end }};"
+      >
+        {{ eq $posttype $currentPosttype }}
+      </strong> </span
+    ><br />
+    {{ end }} {{ else }}
+    <span style="color: red">⚠️ Posttype está vazio ou null!</span>
+    {{ end }}
+  </div>
+  {{ end }} {{ else }}
+  <p style="color: red; font-weight: bold">
+    ❌ NENHUM POST ENCONTRADO NA SEÇÃO "posts"!
+  </p>
+  {{ end }}
+
+  <hr style="border: 1px solid #000; margin: 1rem 0" />
+
+  <h4 style="color: blue">Filtro real sendo executado:</h4>
+  {{ $currentPosttype := lower .Title }} {{ $filteredPosts := slice }} {{ range
+  $allPosts }} {{ $post := . }} {{ if $post.Params.posttype }} {{ range
+  $post.Params.posttype }} {{ $posttype := lower . }} {{ if eq $posttype
+  $currentPosttype }} {{ $filteredPosts = $filteredPosts | append $post }} {{
+  end }} {{ end }} {{ end }} {{ end }}
+  <p>
+    <strong>Posts filtrados para "{{ $currentPosttype }}":</strong> {{ len
+    $filteredPosts }}
+  </p>
+</div>
+<!-- FIM DEBUG -->
+
 <div class="hx-mx-auto hx-max-w-screen-xl hx-px-6 hx-py-12">
   <header class="hx-mb-12">
-    <h1 class="hx-text-4xl hx-font-bold hx-mb-4">{{ .Title }}</h1>
+    <h1
+      class="hx-text-4xl hx-font-bold hx-mb-4 hx-text-gray-900 dark:hx-text-gray-100"
+    >
+      {{ .Title }}
+    </h1>
     <p class="hx-text-lg hx-text-gray-600 dark:hx-text-gray-400">
       Todos os posts desta categoria
     </p>
   </header>
 
-  {{ $currentPosttype := lower .Title }} {{ $posts := where site.RegularPages
-  "Section" "posts" }} {{ $filteredPosts := slice }} {{ range $posts }} {{
-  $currentPost := . }} {{ if .Params.posttype }} {{ range .Params.posttype }} {{
-  if eq (lower .) $currentPosttype }} {{ $filteredPosts = $filteredPosts |
-  append $currentPost }} {{ end }} {{ end }} {{ end }} {{ end }} {{ if gt (len
-  $filteredPosts) 0 }}
-  <ul class="hx-space-y-8">
+  {{ $currentPosttype := lower .Title }} {{ $allPosts := where site.RegularPages
+  "Section" "posts" }} {{ $filteredPosts := slice }} {{ range $allPosts }} {{
+  $post := . }} {{ if $post.Params.posttype }} {{ range $post.Params.posttype }}
+  {{ $posttype := lower . }} {{ if eq $posttype $currentPosttype }} {{
+  $filteredPosts = $filteredPosts | append $post }} {{ end }} {{ end }} {{ end
+  }} {{ end }} {{ if gt (len $filteredPosts) 0 }}
+  <ul class="hx-space-y-8 hx-list-none">
     {{ range $filteredPosts }}
-    <li class="hx-border-b hx-border-gray-200 dark:hx-border-gray-800 hx-pb-8">
-      <h3 class="hx-text-2xl hx-font-semibold hx-mb-2">
+    <li
+      class="hx-border-b hx-border-gray-200 dark:hx-border-gray-800 hx-pb-8 last:hx-border-0"
+    >
+      <h3
+        class="hx-text-2xl hx-font-semibold hx-mb-2 hx-text-gray-900 dark:hx-text-gray-100"
+      >
         <a
           href="{{ .RelPermalink }}"
-          class="hover:hx-text-blue-600 dark:hover:hx-text-blue-400"
+          class="hover:hx-text-blue-600 dark:hover:hx-text-blue-400 hx-transition-colors hx-no-underline"
         >
           {{ .Title }}
         </a>
       </h3>
 
-      <small class="hx-text-sm hx-text-gray-500 hx-mb-3 hx-block">
+      <div class="hx-text-sm hx-text-gray-500 dark:hx-text-gray-500 hx-mb-3">
         {{ .Date.Format "02 Jan 2006" }} {{ with .Params.posttype }} |
         <span>{{ index . 0 | title }}</span>{{ end }}
-      </small>
+      </div>
 
       {{ with .Params.description }}
-      <div class="hx-text-gray-700 dark:hx-text-gray-300 hx-mb-3">{{ . }}</div>
+      <div
+        class="hx-text-gray-700 dark:hx-text-gray-300 hx-mb-3 hx-leading-relaxed"
+      >
+        {{ . }}
+      </div>
       {{ end }} {{ with .Params.tags }}
-      <small class="hx-text-sm hx-text-gray-500">
-        Tags: {{ range . }}<span class="hx-mr-2">#{{ . }}</span>{{ end }}
-      </small>
+      <div class="hx-text-sm hx-text-gray-500 dark:hx-text-gray-500">
+        <span>Tags:</span>
+        {{ range . }}
+        <span
+          class="hx-inline-block hx-mr-2 hx-text-gray-600 dark:hx-text-gray-400"
+          >#{{ . }}</span
+        >
+        {{ end }}
+      </div>
       {{ end }}
     </li>
     {{ end }}
@@ -43,19 +141,23 @@
   {{ else }}
   <div class="hx-text-center hx-py-16">
     <div class="hx-text-6xl hx-mb-4">🚧</div>
-    <h2 class="hx-text-2xl hx-font-semibold hx-mb-3">
+    <h2
+      class="hx-text-2xl hx-font-semibold hx-mb-3 hx-text-gray-800 dark:hx-text-gray-200"
+    >
       Nenhum post nesta categoria ainda
     </h2>
     <p class="hx-text-gray-600 dark:hx-text-gray-400 hx-mb-6">
-      Assim que houver novidades, este espaço será preenchido!
+      Assim que houver novidades, este espaço será preenchido com experiências
+      tech de verdade!
     </p>
     <a
       href="/"
-      class="hx-inline-block hx-px-6 hx-py-3 hx-bg-blue-600 hover:hx-bg-blue-700 hx-text-white hx-rounded"
+      class="hx-inline-block hx-px-6 hx-py-3 hx-bg-blue-600 hover:hx-bg-blue-700 hx-text-white hx-rounded hx-transition-colors hx-no-underline"
     >
       ← Voltar para home
     </a>
   </div>
   {{ end }}
 </div>
+
 {{ end }}
