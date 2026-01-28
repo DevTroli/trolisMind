@@ -1,18 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Troli&#39;s Mind – Troli&#39;s Mind</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Troli&#39;s Mind</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Fri, 23 Jan 2026 11:14:25 -0300</lastBuildDate>
-    
-	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Troli's Mind – Troli's Mind</title><link>https://example.org/</link><description>Recent content on Troli's Mind</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Fri, 23 Jan 2026 11:14:25 -0300</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

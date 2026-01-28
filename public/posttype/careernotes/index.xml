@@ -1,133 +1,93 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Troli&#39;s Mind – CareerNotes</title>
-    <link>http://localhost:1313/posttype/careernotes/</link>
-    <description>Recent content in CareerNotes on Troli&#39;s Mind</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Fri, 23 Jan 2026 11:14:25 -0300</lastBuildDate>
-    
-	  <atom:link href="http://localhost:1313/posttype/careernotes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Você não é perfeccionista, você é um medroso com uma desculpa</title>
-      <link>http://localhost:1313/posts/2026/01/medo-do-fracasso/</link>
-      <pubDate>Fri, 23 Jan 2026 11:14:25 -0300</pubDate>
-      
-      <guid>http://localhost:1313/posts/2026/01/medo-do-fracasso/</guid>
-      <description>
-        
-        
-        &lt;div
-  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
-  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Troli's Mind – CareerNotes</title><link>https://example.org/posttype/careernotes/</link><description>Recent content in CareerNotes on Troli's Mind</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Fri, 23 Jan 2026 11:14:25 -0300</lastBuildDate><atom:link href="https://example.org/posttype/careernotes/index.xml" rel="self" type="application/rss+xml"/><item><title>Você não é perfeccionista, você é um medroso com uma desculpa</title><link>https://example.org/posts/2026/01/medo-do-fracasso/</link><pubDate>Fri, 23 Jan 2026 11:14:25 -0300</pubDate><guid>https://example.org/posts/2026/01/medo-do-fracasso/</guid><description>
+&lt;div
+class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
+style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 &gt;
-   Troli | 23 Jan 2026  |
-  &lt;span
-    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
-    &gt;Careernotes&lt;/span
-  &gt;
+Troli | 23 Jan 2026 |
+&lt;span
+class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
+&gt;Careernotes&lt;/span
+&gt;
 &lt;/div&gt;
-
 &lt;p&gt;Nesse texto tento te fazer uma provocação necessária para desenvolvedores presos no ciclo do perfeccionismo paralisante, pois precisamos de mais MVPs imperfeitos no ar e menos produtos perfeitos no HD, Ainda mais porque o alvo da critica desse post sou exatamente eu. Mantive engavetada por muito a ideia desse blog que ficou apenas no meu localhost, pelo medo do fracasso e de achar que não fazia sentido fazer algo assim então por meses não consegui fazer o 1° post nem mesmo fazer um deploy que tocasse o mundo real, pois fiz um planejamento enorme, documentei demais como se procastinasse para esse projeto se tornar tangivel e acabei ficando paralisado.&lt;/p&gt;
-&lt;p&gt;Esse texto abaixo teve auxilio de I.A na escrita. Pois é, eu estou usando &amp;ldquo;muletas&amp;rdquo;, mas para meu bem esse foi o melhor que pude fazer por agora espero que no futuro consiga fazer tudo sozinho sem auxilio nenhum de I.A, no entanto preciso apenas começar porque melhor publicar algo do que nunca publicar.  Se eu continuar tentando controlar todas as variáveis não vou sair do lugar e vou continuar me enganando de que preciso fazer algo perfeito que todos vão amar, mas isso não passa de uma desculpa e quem é bom em dar desculpa, não precisa ser bom em nada!&lt;/p&gt;
-&lt;p&gt;É exatamente por isso que idealizei o Troli&amp;rsquo;s Mind para ser um espaço  onde eu possa escrever, errar, melhorar - sem precisar ter algo perfeito apenas algo feito.&lt;/p&gt;
-&lt;h2&gt;Os 15 projetos inacabados&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;os-15-projetos-inacabados&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#os-15-projetos-inacabados&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Todo desenvolvedor tem 15 projetos inacabados. O problema não é falta de habilidade técnica - é medo disfarçado de perfeccionismo. Este post é sobre parar de se enganar.&lt;/p&gt;
-&lt;p&gt;Todo desenvolvedor conhece essa história: tem quinze projetos em seu GitHub, dez prontos para deploy, uma coleção crescente de domínios e uma paralisia que impede qualquer lançamento. O MVP que nunca vê a luz  do dia (e se vê é totalmente esquecido) não é uma falha técnica — é uma falha psicológica.&lt;/p&gt;
+&lt;p&gt;Esse texto abaixo teve auxilio de I.A na escrita. Pois é, eu estou usando &amp;ldquo;muletas&amp;rdquo;, mas para meu bem esse foi o melhor que pude fazer por agora espero que no futuro consiga fazer tudo sozinho sem auxilio nenhum de I.A, no entanto preciso apenas começar porque melhor publicar algo do que nunca publicar. Se eu continuar tentando controlar todas as variáveis não vou sair do lugar e vou continuar me enganando de que preciso fazer algo perfeito que todos vão amar, mas isso não passa de uma desculpa e quem é bom em dar desculpa, não precisa ser bom em nada!&lt;/p&gt;
+&lt;p&gt;É exatamente por isso que idealizei o Troli&amp;rsquo;s Mind para ser um espaço onde eu possa escrever, errar, melhorar - sem precisar ter algo perfeito apenas algo feito.&lt;/p&gt;
+&lt;h2&gt;Os 15 projetos inacabados&lt;span class="hx:absolute hx:-mt-20" id="os-15-projetos-inacabados"&gt;&lt;/span&gt;
+&lt;a href="#os-15-projetos-inacabados" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Todo desenvolvedor tem 15 projetos inacabados. O problema não é falta de habilidade técnica - é medo disfarçado de perfeccionismo. Este post é sobre parar de se enganar.&lt;/p&gt;
+&lt;p&gt;Todo desenvolvedor conhece essa história: tem quinze projetos em seu GitHub, dez prontos para deploy, uma coleção crescente de domínios e uma paralisia que impede qualquer lançamento. O MVP que nunca vê a luz do dia (e se vê é totalmente esquecido) não é uma falha técnica — é uma falha psicológica.&lt;/p&gt;
 &lt;p&gt;A paralisia por análise na programação não é apenas procrastinação disfarçada. É o resultado de uma cultura que simultaneamente exige perfeição e pune o erro. O desenvolvedor se encontra preso entre a necessidade de entregar algo funcional e o medo de que &amp;ldquo;ninguém vai usar isso aqui&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;O perfeccionismo na carreira de TI se manifesta de forma peculiar: cada linha de código precisa ser impecável, cada funcionalidade deve cobrir todas as possibilidades, cada design precisa ser revolucionário. O resultado? Projetos que jamais saem da fase de &amp;ldquo;quase pronto&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Este comportamento reflete uma mentalidade tóxica que confunde qualidade com perfeição. A busca incessante pelo código perfeito, pela arquitetura ideal, pelo produto sem falhas cria um ciclo vicioso onde o desenvolvedor investe semanas refinando detalhes enquanto o core do problema permanece sem solução.&lt;/p&gt;
 &lt;p&gt;A verdade incômoda é que desenvolvedores frequentemente se apaixonam mais pelo processo de criar do que pelo resultado de entregar. É mais confortável refatorar pela décima vez do que enfrentar o feedback real de usuários reais&amp;hellip; isso se houverem usuários reais.&lt;/p&gt;
-&lt;h2&gt;Síndrome do Impostor Tecnlógica&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;síndrome-do-impostor-tecnlógica&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#s%c3%adndrome-do-impostor-tecnl%c3%b3gica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A constante evolução tecnológica cria um paradoxo cruel: quanto mais você aprende, mais percebe que não sabe. Esta realidade alimenta a síndrome do impostor, fazendo desenvolvedores experientes questionarem sua competência constantemente.&lt;/p&gt;
+&lt;h2&gt;Síndrome do Impostor Tecnlógica&lt;span class="hx:absolute hx:-mt-20" id="síndrome-do-impostor-tecnlógica"&gt;&lt;/span&gt;
+&lt;a href="#s%c3%adndrome-do-impostor-tecnl%c3%b3gica" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A constante evolução tecnológica cria um paradoxo cruel: quanto mais você aprende, mais percebe que não sabe. Esta realidade alimenta a síndrome do impostor, fazendo desenvolvedores experientes questionarem sua competência constantemente.&lt;/p&gt;
 &lt;p&gt;O problema se agrava quando a cultura da empresa ou da comunidade pune quem admite não saber algo. Code reviews que destacam ignorância ao invés de promover aprendizado, ambientes onde pedir ajuda é visto como fraqueza, e a romantização do &amp;ldquo;desenvolvedor ninja&amp;rdquo; que resolve tudo sozinho.&lt;/p&gt;
 &lt;p&gt;O medo de errar na programação é particularmente absurdo porque programar É errar. Debugging não é uma atividade secundária — é o coração do desenvolvimento. Cada erro é informação, cada bug é conhecimento.&lt;/p&gt;
 &lt;p&gt;Quando desenvolvedores evitam projetos desafiadores por medo de não conseguir, eles se privam exatamente da experiência que os tornaria capazes. É um ciclo autossabotador onde o medo do fracasso garante a estagnação.&lt;/p&gt;
-&lt;h2&gt;Metodologia de Experimentação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;metodologia-de-experimentação&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#metodologia-de-experimenta%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A engenharia de software experimental não é apenas uma disciplina acadêmica — é uma mentalidade. Cada projeto é um experimento, cada deploy é uma hipótese sendo testada. Esta perspectiva transforma falhas de catástrofes em dados.&lt;/p&gt;
+&lt;h2&gt;Metodologia de Experimentação&lt;span class="hx:absolute hx:-mt-20" id="metodologia-de-experimentação"&gt;&lt;/span&gt;
+&lt;a href="#metodologia-de-experimenta%c3%a7%c3%a3o" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A engenharia de software experimental não é apenas uma disciplina acadêmica — é uma mentalidade. Cada projeto é um experimento, cada deploy é uma hipótese sendo testada. Esta perspectiva transforma falhas de catástrofes em dados.&lt;/p&gt;
 &lt;p&gt;O desenvolvedor que abraça a experimentação entende que código não é arte — é ferramenta. A elegância técnica é secundária à utilidade prática. Um sistema feio que resolve um problema real vale mais que uma arquitetura elegante que ninguém usa.&lt;/p&gt;
 &lt;p&gt;O maior obstáculo para lançar projetos não é técnico — é emocional. O ego do desenvolvedor se identifica com o código, transformando críticas ao produto em ataques pessoais. Esta fusão entre identidade profissional e output técnico paralisa a ação.&lt;/p&gt;
 &lt;p&gt;A solução passa por separar o criador da criação. Seu código não é você. Seus bugs não definem sua competência. Seu MVP imperfeito não diminui seu valor como profissional.&lt;/p&gt;
-&lt;h2&gt;Fail Fast como Antídoto&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fail-fast-como-antídoto&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#fail-fast-como-ant%c3%addoto&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Vale do Silício não popularizou o &amp;ldquo;fail fast&amp;rdquo; por acaso. Esta filosofia reconhece uma verdade fundamental: falhar cedo e barato é infinitamente melhor do que falhar tarde e caro. Um MVP imperfeito no ar vale mais que um produto perfeito no HD.&lt;/p&gt;
+&lt;h2&gt;Fail Fast como Antídoto&lt;span class="hx:absolute hx:-mt-20" id="fail-fast-como-antídoto"&gt;&lt;/span&gt;
+&lt;a href="#fail-fast-como-ant%c3%addoto" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O Vale do Silício não popularizou o &amp;ldquo;fail fast&amp;rdquo; por acaso. Esta filosofia reconhece uma verdade fundamental: falhar cedo e barato é infinitamente melhor do que falhar tarde e caro. Um MVP imperfeito no ar vale mais que um produto perfeito no HD.&lt;/p&gt;
 &lt;p&gt;O conceito de Lean Startup revolucionou o desenvolvimento justamente por quebrar a ilusão de que planejamento excessivo previne fracassos. Como disse Steve Blank: &amp;ldquo;Nenhum plano de negócios resiste ao primeiro contato com clientes&amp;rdquo;.&lt;/p&gt;
-&lt;h2&gt;Quebrando esse ciclo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quebrando-esse-ciclo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#quebrando-esse-ciclo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Defina &amp;ldquo;pronto&amp;rdquo; antes de começar&lt;/strong&gt;: Estabeleça critérios mínimos de funcionalidade e PARE quando atingi-los. Resistir à tentação de &amp;ldquo;só mais uma feature&amp;rdquo; é uma habilidade que se desenvolve.&lt;/p&gt;
+&lt;h2&gt;Quebrando esse ciclo&lt;span class="hx:absolute hx:-mt-20" id="quebrando-esse-ciclo"&gt;&lt;/span&gt;
+&lt;a href="#quebrando-esse-ciclo" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Defina &amp;ldquo;pronto&amp;rdquo; antes de começar&lt;/strong&gt;: Estabeleça critérios mínimos de funcionalidade e PARE quando atingi-los. Resistir à tentação de &amp;ldquo;só mais uma feature&amp;rdquo; é uma habilidade que se desenvolve.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Implemente deadlines artificiais&lt;/strong&gt;: Sem pressão externa, crie pressão interna. Anuncie um prazo de lançamento publicamente — o constrangimento social é um motivador poderoso.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Comece pelo deployment&lt;/strong&gt;: Configure CI/CD antes de escrever a primeira linha de código. Quando o deployment é automático, lançar deixa de ser um evento traumático.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Abraçar o feedback negativo&lt;/strong&gt;: Não tente agradar todos — tente resolver um problema específico para um grupo específico. Feedback negativo de quem não é seu público-alvo é irrelevante.&lt;/p&gt;
 &lt;p&gt;A sugestão de transformar projetos inacabados em portfolio não é apenas organizacional — é terapêutica. Documentar o processo, as decisões técnicas e os aprendizados valida o esforço investido, mesmo sem um produto final.&lt;/p&gt;
 &lt;p&gt;Um portfolio honesto, que inclui projetos inacabados com reflexões sobre por que foram abandonados, é mais valioso que uma lista de sucessos fabricados.&lt;/p&gt;
-&lt;h2&gt;Aceitando ser imperfeito&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;aceitando-ser-imperfeito&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#aceitando-ser-imperfeito&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O desenvolvedor que nunca lança nada por medo da imperfeição comete o erro mais grave possível: privar o mundo de soluções potenciais em nome de padrões impossíveis.&lt;/p&gt;
+&lt;h2&gt;Aceitando ser imperfeito&lt;span class="hx:absolute hx:-mt-20" id="aceitando-ser-imperfeito"&gt;&lt;/span&gt;
+&lt;a href="#aceitando-ser-imperfeito" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O desenvolvedor que nunca lança nada por medo da imperfeição comete o erro mais grave possível: privar o mundo de soluções potenciais em nome de padrões impossíveis.&lt;/p&gt;
 &lt;p&gt;A tecnologia avança através de iteração, não de revelação divina. Facebook começou feio, Twitter era limitado, WhatsApp era básico. O que os tornou grandes não foi a perfeição inicial — foi a coragem de começar imperfeito e melhorar continuamente.&lt;/p&gt;
 &lt;p&gt;Todo projeto no seu HD representa uma oportunidade perdida de impactar alguém, resolver um problema, aprender algo novo. A perfeição é inimiga do progresso, e o medo do fracasso garante a sua irrelevância e de seu projeto.&lt;/p&gt;
 &lt;p&gt;Esse post além de ser meu primeiro post também é quando será feito o deploy do Troli&amp;rsquo;s Mind para sair de uma ideia arquivada no meu GitHub para finalmente estar no ar e ver a luz do dia. Por mais que eu tenha usado I.A para estruturar a minha ideia original, copiei referências de outros textos estou feliz que finalmente comecei a dar vida a esse projeto.&lt;/p&gt;
 &lt;p&gt;Hora de fazer um deploy. Mesmo que seja só para ver o que acontece!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2&gt;Fontes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fontes&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#fontes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.tabnews.com.br/ojonatasquirino/paralisia-por-analise-a-inimiga-da-experiencia-e-do-aprendizado&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paralisia por Análise&lt;/a&gt;
-&lt;a href=&#34;https://www.reddit.com/r/reactjs/comments/svktdm/how_to_avoid_analysis_paralysis_when_starting/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How to avoid analysis paralysis&lt;/a&gt;
-&lt;a href=&#34;https://www.tabnews.com.br/matheuspazinati/o-que-me-fez-estagnar-na-programacao&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estagnação na programação&lt;/a&gt;
-&lt;a href=&#34;https://youtu.be/BNy7RVBYA5U?si=Ybif8F287hntCg6u&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Perfeccionismo-Cadar&lt;/a&gt;
-&lt;a href=&#34;https://ontologia.eximia.co/conceitos/paralisia-por-analise/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P.A&lt;/a&gt;
-&lt;a href=&#34;https://www.rdstation.com/blog/marketing/mvp-minimo-produto-viavel/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MVP&lt;/a&gt;
-&lt;a href=&#34;https://meupotencial.com/perfeccionismo-na-carreira-de-ti-produtividade/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Perfeccionismo na carreira&lt;/a&gt;
-&lt;a href=&#34;https://www.tabnews.com.br/ojonatasquirino/paralisia-por-analise-a-inimiga-da-experiencia-e-do-aprendizado&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tabnews -&amp;gt; P.A 2&lt;/a&gt;
-&lt;a href=&#34;https://www.sankhya.com.br/gestao-de-negocios/como-criar-um-mvp/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MVP 2&lt;/a&gt;
-&lt;a href=&#34;https://sergiorodriguesblog.wordpress.com/2024/04/07/desvendando-a-paralisia-por-analise-como-superar-o-bloqueio-da-produtividade/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P.A 3&lt;/a&gt;
-&lt;a href=&#34;https://www.cesar.org.br/w/mvp-o-que-e-vantagens-e-como-aplicar-para-o-seu-produto&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MVP 3&lt;/a&gt;
-&lt;a href=&#34;https://programathor.com.br/blog/perfeccionismo_profissional/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Perfeccionismo profissional&lt;/a&gt;
-&lt;a href=&#34;https://caputconsultoria.com.br/a-paralisia-por-analise/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P.A 4&lt;/a&gt;
-&lt;a href=&#34;https://softdesign.com.br/blog/mvp-experimentacao-e-aprendizado/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MVP 4&lt;/a&gt;
-&lt;a href=&#34;https://www.reddit.com/r/learnprogramming/comments/1fiafba/the_harm_of_perfectionism_in_programming/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Perfeccionismo na Programação&lt;/a&gt;
-&lt;a href=&#34;https://www.tecnicon.com.br/blog/374-Fail_fast_learn_faster_Outro_olhar_sobre_o_fracasso&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fail Fast, Fail Often&lt;/a&gt;
-&lt;a href=&#34;https://www.diwe.com.br/blog/por-que-a-lean-startup-muda-tudo&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lean Startup&lt;/a&gt;
-&lt;a href=&#34;https://www.acceptmission.com/pt/blog/fail-fast-learn-faster/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Method Fail Fast&lt;/a&gt;
-&lt;a href=&#34;https://zup.com.br/blog/o-que-e-engenharia-de-software-empirica/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Engenharia Empirica&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Fontes&lt;span class="hx:absolute hx:-mt-20" id="fontes"&gt;&lt;/span&gt;
+&lt;a href="#fontes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href="https://www.tabnews.com.br/ojonatasquirino/paralisia-por-analise-a-inimiga-da-experiencia-e-do-aprendizado"target="_blank" rel="noopener"&gt;Paralisia por Análise&lt;/a&gt;
+&lt;a href="https://www.reddit.com/r/reactjs/comments/svktdm/how_to_avoid_analysis_paralysis_when_starting/"target="_blank" rel="noopener"&gt;How to avoid analysis paralysis&lt;/a&gt;
+&lt;a href="https://www.tabnews.com.br/matheuspazinati/o-que-me-fez-estagnar-na-programacao"target="_blank" rel="noopener"&gt;Estagnação na programação&lt;/a&gt;
+&lt;a href="https://youtu.be/BNy7RVBYA5U?si=Ybif8F287hntCg6u"target="_blank" rel="noopener"&gt;Perfeccionismo-Cadar&lt;/a&gt;
+&lt;a href="https://ontologia.eximia.co/conceitos/paralisia-por-analise/"target="_blank" rel="noopener"&gt;P.A&lt;/a&gt;
+&lt;a href="https://www.rdstation.com/blog/marketing/mvp-minimo-produto-viavel/"target="_blank" rel="noopener"&gt;MVP&lt;/a&gt;
+&lt;a href="https://meupotencial.com/perfeccionismo-na-carreira-de-ti-produtividade/"target="_blank" rel="noopener"&gt;Perfeccionismo na carreira&lt;/a&gt;
+&lt;a href="https://www.tabnews.com.br/ojonatasquirino/paralisia-por-analise-a-inimiga-da-experiencia-e-do-aprendizado"target="_blank" rel="noopener"&gt;Tabnews -&amp;gt; P.A 2&lt;/a&gt;
+&lt;a href="https://www.sankhya.com.br/gestao-de-negocios/como-criar-um-mvp/"target="_blank" rel="noopener"&gt;MVP 2&lt;/a&gt;
+&lt;a href="https://sergiorodriguesblog.wordpress.com/2024/04/07/desvendando-a-paralisia-por-analise-como-superar-o-bloqueio-da-produtividade/"target="_blank" rel="noopener"&gt;P.A 3&lt;/a&gt;
+&lt;a href="https://www.cesar.org.br/w/mvp-o-que-e-vantagens-e-como-aplicar-para-o-seu-produto"target="_blank" rel="noopener"&gt;MVP 3&lt;/a&gt;
+&lt;a href="https://programathor.com.br/blog/perfeccionismo_profissional/"target="_blank" rel="noopener"&gt;Perfeccionismo profissional&lt;/a&gt;
+&lt;a href="https://caputconsultoria.com.br/a-paralisia-por-analise/"target="_blank" rel="noopener"&gt;P.A 4&lt;/a&gt;
+&lt;a href="https://softdesign.com.br/blog/mvp-experimentacao-e-aprendizado/"target="_blank" rel="noopener"&gt;MVP 4&lt;/a&gt;
+&lt;a href="https://www.reddit.com/r/learnprogramming/comments/1fiafba/the_harm_of_perfectionism_in_programming/"target="_blank" rel="noopener"&gt;Perfeccionismo na Programação&lt;/a&gt;
+&lt;a href="https://www.tecnicon.com.br/blog/374-Fail_fast_learn_faster_Outro_olhar_sobre_o_fracasso"target="_blank" rel="noopener"&gt;Fail Fast, Fail Often&lt;/a&gt;
+&lt;a href="https://www.diwe.com.br/blog/por-que-a-lean-startup-muda-tudo"target="_blank" rel="noopener"&gt;Lean Startup&lt;/a&gt;
+&lt;a href="https://www.acceptmission.com/pt/blog/fail-fast-learn-faster/"target="_blank" rel="noopener"&gt;Method Fail Fast&lt;/a&gt;
+&lt;a href="https://zup.com.br/blog/o-que-e-engenharia-de-software-empirica/"target="_blank" rel="noopener"&gt;Engenharia Empirica&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-
 &lt;div
-  class=&#34;hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800&#34;
+class="hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800"
 &gt;
-  &lt;span
-    class=&#34;hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300&#34;
-    &gt;Tags:
-  &lt;/span&gt;
-  
-  &lt;span
-    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
-    &gt;#mvp&lt;/span
-  &gt;
-  
-  &lt;span
-    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
-    &gt;#carreira&lt;/span
-  &gt;
-  
-  &lt;span
-    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
-    &gt;#mentalidade&lt;/span
-  &gt;
-  
-  &lt;span
-    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
-    &gt;#soft-skills&lt;/span
-  &gt;
-  
-&lt;/div&gt;
-
-
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;span
+class="hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300"
+&gt;Tags:
+&lt;/span&gt;
+&lt;span
+class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+&gt;#mvp&lt;/span
+&gt;
+&lt;span
+class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+&gt;#carreira&lt;/span
+&gt;
+&lt;span
+class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+&gt;#mentalidade&lt;/span
+&gt;
+&lt;span
+class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+&gt;#soft-skills&lt;/span
+&gt;
+&lt;/div&gt;</description></item></channel></rss>
