@@ -3,23 +3,16 @@
 <ul class="posts-list" style="list-style-type: none">
   {{ range $posts }}
   <li>
-    <h3>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h3>
-
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <small style="color: #9ca3af">
       {{ .Date.Format "02 Jan 2006" }} {{ with .Params.posttype }} |
-      <span>{{ index . 0 | title }}</span>
-      {{ end }}
+      <span>{{ index . 0 | title }}</span>{{ end }}
     </small>
-
     {{ with .Params.description }}
     <div class="description" style="margin-bottom: 0.5rem">{{ . }}</div>
     {{ end }} {{ with .Params.tags }}
     <small style="color: #9ca3af">
-      Tags: {{ range . }}
-      <span class="tag">#{{ . }}</span>
-      {{ end }}
+      Tags: {{ range . }}<span class="tag">#{{ . }}</span>{{ end }}
     </small>
     {{ end }}
   </li>
