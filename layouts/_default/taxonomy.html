@@ -1,0 +1,137 @@
+{{ define "main" }}
+
+<style>
+  .taxonomy-wrap {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+  }
+
+  .taxonomy-header {
+    margin-bottom: 4rem;
+  }
+
+  .taxonomy-header h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .taxonomy-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #9ca3af;
+    max-width: 60ch;
+  }
+
+  .taxonomy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .taxonomy-item {
+    padding: 2.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .taxonomy-item:last-child {
+    border-bottom: none;
+  }
+
+  .taxonomy-item h2 {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    margin-bottom: 0.4rem;
+    color: #0086e6;
+    text-decoration: underline;
+  }
+
+  .taxonomy-item a {
+    text-decoration: none;
+  }
+
+  .taxonomy-meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+  }
+
+  .taxonomy-excerpt {
+    font-size: 0.8rem;
+  }
+
+  .taxonomy-empty {
+    text-align: center;
+    padding: 6rem 1rem;
+    color: #9ca3af;
+  }
+
+  .taxonomy-empty span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  /* Responsivo simples */
+  @media (max-width: 640px) {
+    .taxonomy-wrap {
+      padding: 3rem 1.25rem 4rem;
+    }
+
+    .taxonomy-header h1 {
+      font-size: 2.1rem;
+    }
+
+    .taxonomy-item h2 {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+
+<div class="taxonomy-wrap">
+  <!-- Header -->
+  <header class="taxonomy-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Description }}
+    <p class="taxonomy-description">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <!-- Conteúdo -->
+  {{ if gt (len .Pages) 0 }}
+
+  <ul class="taxonomy-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <li class="taxonomy-item">
+      <h2>
+        <a href="{{ .RelPermalink }}"> {{ .Title }} </a>
+      </h2>
+
+      <div class="taxonomy-meta">{{ .Date.Format "02 Jan 2006" }}</div>
+
+      {{ with .Params.description }}
+      <p class="taxonomy-excerpt">{{ . }}</p>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+
+  {{ else }}
+
+  <!-- Estado vazio -->
+  <div class="taxonomy-empty">
+    <span>🚧</span>
+    <h2>Nenhum post disponível ainda</h2>
+    <p>
+      Assim que houver novidades, este espaço será preenchido com experiências
+      tech de verdade!
+    </p>
+  </div>
+
+  {{ end }}
+</div>
+
+{{ end }}

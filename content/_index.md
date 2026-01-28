@@ -14,7 +14,7 @@ layout: "single"
 
 ### Seções editoriais
 
-[🔥 RANT](/posttypes/rant/)  [🏗️ DeepDives](/posttypes/deepdives/)  [🎯 CareerNotes](/posttypes/careernotes)  [💾 Snippets](/posttypes/snippets)  [👥 Design](/posttypes/design/)  [📚 Library](/posttypes/library/)
+[🔥 RANT](/posttype/rant/)  [🏗️ DeepDives](/posttype/deepdives/)  [🎯 CareerNotes](/posttype/careernotes)  [💾 Snippets](/posttype/snippets)  [👥 Design](/posttype/design/)  [📚 Library](/posttype/library/)
 
 
 ### Princípios

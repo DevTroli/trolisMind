@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Troli&#39;s Mind – Mentalidade</title>
-    <link>http://localhost:32773/tags/mentalidade/</link>
-    <description>Recent content in Mentalidade on Troli&#39;s Mind</description>
+    <title>Troli&#39;s Mind – CareerNotes</title>
+    <link>http://localhost:1313/posttype/careernotes/</link>
+    <description>Recent content in CareerNotes on Troli&#39;s Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 23 Jan 2026 11:14:25 -0300</lastBuildDate>
     
-	  <atom:link href="http://localhost:32773/tags/mentalidade/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/posttype/careernotes/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Você não é perfeccionista, você é um medroso com uma desculpa</title>
-      <link>http://localhost:32773/posts/2026/01/medo-do-fracasso/</link>
+      <link>http://localhost:1313/posts/2026/01/medo-do-fracasso/</link>
       <pubDate>Fri, 23 Jan 2026 11:14:25 -0300</pubDate>
       
-      <guid>http://localhost:32773/posts/2026/01/medo-do-fracasso/</guid>
+      <guid>http://localhost:1313/posts/2026/01/medo-do-fracasso/</guid>
       <description>
         
         

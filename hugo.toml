@@ -18,10 +18,10 @@ title = "Troli's Mind"
 [params]
   description = "Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia"
   author = "Troli"
+  pageWidth = "full"
 
-# Configurações do rodapé
   [params.footer]
-    enable = true
+    enable = false
     copyright = "© 2025 Troli's Mind — Conteúdo com autenticidade, profundidade e contexto"
 
 # Configurações do Markdown e sintaxe de destaque
@@ -62,3 +62,5 @@ title = "Troli's Mind"
 [params.hextra]
   showThemeCredit = false
 
+[taxonomies]
+posttype = "posttype"
