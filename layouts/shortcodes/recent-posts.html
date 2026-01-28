@@ -1,7 +1,7 @@
-{{ $count := .Get "count" | default 6 }}
+{{ $count := 6 }} {{ with .Get "count" }} {{ $count = . | int }} {{ end }}
 
 <div class="recent-posts">
-  {{ range first $count site.RegularPages }}
+  {{ range first $count (where site.RegularPages "Section" "posts") }}
   <article class="post-card">
     <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
     <div class="post-meta">
