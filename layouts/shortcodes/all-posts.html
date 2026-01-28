@@ -1,6 +1,5 @@
 {{ $posts := where site.RegularPages "Section" "posts" }} 
-{{ if gt (len $posts)
-0 }}
+{{ if gt (len $posts) 0 }}
 <ul class="posts-list" style="list-style-type: none">
   {{ range $posts }}
   <li>
