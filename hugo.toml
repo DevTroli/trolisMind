@@ -30,7 +30,7 @@ title = "Troli's Mind"
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    style = "github"
+    style = "gruvbox-dark"
     anchorLineNos = false
     codeFences = true
     guessSyntax = false

@@ -1,1 +1,260 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Troli's Mind – Snippets</title><link>https://example.org/posttype/snippets/</link><description>Recent content in Snippets on Troli's Mind</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><atom:link href="https://example.org/posttype/snippets/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troli&#39;s Mind – Snippets</title>
+    <link>http://localhost:1313/posttype/snippets/</link>
+    <description>Recent content in Snippets on Troli&#39;s Mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 31 Jan 2026 12:11:13 -0300</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/posttype/snippets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Como fiz o deploy desse blog</title>
+      <link>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</link>
+      <pubDate>Sat, 31 Jan 2026 12:11:13 -0300</pubDate>
+      
+      <guid>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</guid>
+      <description>
+        
+        
+        &lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 31 Jan 2026  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+    &gt;Snippets&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;No &lt;a href=&#34;http://localhost:1313/posts/2026/01/medo-do-fracasso/&#34;&gt;post anterior&lt;/a&gt;, escrevi sobre como perfeccionismo é medo disfarçado. Depois de dizer tudo aquilo não posso ficar só na teoria — este post documenta o deploy real que finalmente tirou o Troli&amp;rsquo;s Mind do localhost. Porque o deploy de um blog estático com Hugo + Vercel levaria literalmente 10 minutos. Eu levei mais de &lt;em&gt;&lt;strong&gt;1 mês&lt;/strong&gt;&lt;/em&gt;. O problema nem foi devido a complexidade na configuração — foi psicológico.&lt;/p&gt;
+&lt;p&gt;Sendo direto o processo técnico para mim levou uns 30 minutos. O processo mental de &amp;ldquo;pressionar os botões&amp;rdquo; levou semanas.&lt;/p&gt;
+&lt;p&gt;Se você também tem projetos mofando no seu GitHub que nunca tocaram na realidade, este post pode ser útil para você que está lendo e para o meu eu do futuro, quando esquecer como configurei tudo isso.&lt;/p&gt;
+&lt;h3&gt;Do SDD para internet&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;do-sdd-para-internet&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#do-sdd-para-internet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;0. Setup Local&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;0-setup-local&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#0-setup-local&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Comandos que você realmente executou&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site trolismind
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;cd&lt;/span&gt; trolismind
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;1. Setup Local → GitHub&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-setup-local--github&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-setup-local--github&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Depois de ter o blog rodando em &lt;code&gt;localhost:1313&lt;/code&gt; com o Hugo+Hextra, o primeiro passo foi versionar isso no Git (não farei um tutorial de git, mas no futuro irei fazer um guia melhor). Agora Vou listar os comandos que usei para versiornar o código para mostrar como git é bem simples na real&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Inicializar repositório Git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Adicionar todos os arquivos que quero versionar&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add nome_arquivo ou .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Primeiro commit&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;🎉 Initial commit: Hugo + Hextra setup&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Conectar com GitHub (crie o repo lá antes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin https://github.com/DevTroli/trolisMind.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Trocar o nome padrão da branch para Main por boas práticas&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Enviar todo o código para o GitHub para versionar o código&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin main&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. Vercel: Conectar e fazer o Deploy&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-vercel-conectar-e-fazer-o-deploy&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-vercel-conectar-e-fazer-o-deploy&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;A) Criar conta na Vercel&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Acessei &lt;a href=&#34;https://vercel.com&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vercel.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fiz login com minha conta do GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_login.png&#34; alt=&#34;Screenshot: Lista de repositórios na Vercel&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;B) Importar o projeto do GitHub&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cliquei em &amp;ldquo;Add New Project&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;A Vercel detectou automaticamente meu repo &lt;code&gt;trolisMind&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Selecionei ele&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_newproject.png&#34; alt=&#34;Screenshot: Lista de repositórios na Vercel&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;!-- TODO: Adicionar print mostrando a tela de seleção de repo --&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;C) Configuração do Build&lt;/strong&gt;&lt;/em&gt;
+A Vercel não detectou automaticamente que era Hugo logo precisei ajustar&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_build.png&#34; alt=&#34;Screenshot: Build settings na Vercel&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;!-- TODO: Adicionar print das configurações de build --&gt;
+&lt;p&gt;Configurações que usei:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Framework Preset:&lt;/strong&gt; Hugo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build Command:&lt;/strong&gt; &lt;code&gt;hugo --gc --minify&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output Directory:&lt;/strong&gt; &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install Command:&lt;/strong&gt; (deixei vazio, Vercel resolve automaticamente)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;4) Variáveis de ambiente&lt;/strong&gt;&lt;/em&gt; (se necessário) No meu caso, não precisei configurar nenhuma env var nesse primeiro deploy. Mas se você tiver coisas como tokens de API ou configurações sensíveis, é aqui que vai.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;5) Deploy!&lt;/strong&gt;&lt;/em&gt; Cliquei em &amp;ldquo;Deploy&amp;rdquo; e espere a mágica acontecer&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_deploy.png&#34; alt=&#34;Screenshot: Build em progresso&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tempo total:&lt;/strong&gt; ~2 minutos até a vercel fazer o build da aplicação e fazer o blog estar no ar.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Gerando a URL padrão da Vercel [nome_repo]+vercel.app:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;trolismind.vercel.app&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. O Primeiro bug em produção&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-o-primeiro-bug-em-produção&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-o-primeiro-bug-em-produ%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Spoiler:&lt;/strong&gt;&lt;/em&gt; O primeiro deploy não funcionou de primeira.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;O erro:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;Error: failed to render pages: render of &amp;#34;posttypes&amp;#34; failed&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;O que aconteceu:&lt;/strong&gt; Tive um problema de layout nos &lt;code&gt;posttypes&lt;/code&gt; e ele só apareceu &lt;em&gt;&lt;strong&gt;depois do deploy em produção&lt;/strong&gt;&lt;/em&gt;. No localhost tava funcionando, mas na Vercel deu pau.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Como resolvi:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Li o log de erro completo na Vercel (não só a primeira linha)&lt;/li&gt;
+&lt;li&gt;Identifiquei que era um problema no template &lt;code&gt;layouts/posttypes/list.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Voltei pro código local, corrigi o bug&lt;/li&gt;
+&lt;li&gt;Fiz commit + push pro GitHub&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vercel fez redeploy automático&lt;/strong&gt; (bom demais a propósito)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Tempo pra resolver:&lt;/strong&gt;&lt;/em&gt; ~15 minutos debugando + 2 minutos esperando o novo deploy.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Lição aprendida:&lt;/strong&gt;&lt;/em&gt; Bugs que não aparecem no &lt;code&gt;hugo server -D&lt;/code&gt; podem aparecer em produção. Por isso é importante fazer deploy cedo, mesmo que o blog não esteja &amp;ldquo;perfeito&amp;rdquo;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Stack Escolhida&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;stack-escolhida&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#stack-escolhida&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h5&gt;Função vs Estética&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;função-vs-estética&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fun%c3%a7%c3%a3o-vs-est%c3%a9tica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;Existe um dilema clássico em qualquer projeto pessoal: escolher entre &lt;strong&gt;o que resolve&lt;/strong&gt; (função) e &lt;strong&gt;o que te empolga&lt;/strong&gt; (estética). Um código impecável mas sem identidade é como um robô eficiente. Um design deslumbrante mas sem propósito é um castelo de areia.&lt;/p&gt;
+&lt;p&gt;Queria uma stack perfeita: moderna, escalável, impressionante. Gastei horas comparando frameworks, lendo benchmarks, planejando arquiteturas. &lt;em&gt;&lt;strong&gt;E não escrevi uma linha de conteúdo.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Até que li &lt;a href=&#34;https://akitaonrails.com/2025/09/10/meu-novo-blog-como-eu-fiz/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este post no blog do Akita&lt;/a&gt; sobre como ele fez o blog dele. E uma mensagem fixou na minha mente:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&amp;ldquo;O blog perfeito não existe — just fucking write!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Percebi que estava usando a escolha de tecnologia como &lt;strong&gt;desculpa sofisticada para não começar&lt;/strong&gt;. Paralisia por análise disfarçada de &amp;ldquo;pesquisa técnica&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;A real é que as melhores escolhas não são as mais modernas, mas &lt;strong&gt;as que te deixam focar no que importa&lt;/strong&gt;. E pro Troli&amp;rsquo;s Mind, o que importa é escrever.&lt;/p&gt;
+&lt;h5&gt;Hugo + Hextra&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;hugo--hextra&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hugo--hextra&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Por que escolhi:&lt;/strong&gt;&lt;/em&gt;
+Hugo é um gerador de sites estáticos notório por uma razão simples: &lt;strong&gt;é absurdamente rápido e direto ao ponto&lt;/strong&gt;. Perfeito pra quem vem de contexto tech, mas quer desenvolver habilidades de escrita, não virar especialista em build pipelines.&lt;/p&gt;
+&lt;p&gt;O workflow é super simples:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Escrevo markdown no Obsidian&lt;/li&gt;
+&lt;li&gt;Rodo &lt;code&gt;hugo server&lt;/code&gt; pra ver localmente&lt;/li&gt;
+&lt;li&gt;Faço &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Deploy automático acontece&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Não tem nada para se configurar. Não tem &amp;ldquo;hmm, deixa eu atualizar essas 17 dependências que ficaram vulneráveis&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sobre o Hextra:&lt;/strong&gt;&lt;/em&gt; Me pareceu o tema ideal - minimalista, limpo, focado em &lt;strong&gt;conteúdo&lt;/strong&gt;. E de graça. Quando vi o demo, pensei: &amp;ldquo;Perfeito. Não preciso customizar nada. Posso começar a escrever hoje.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;E foi exatamente o que fiz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alternativas que considerei:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Django?&lt;/strong&gt; Seria como usar uma bazuca pra matar uma formiga. Framework web completo com ORM, admin panel, autenticação&amp;hellip; pra servir markdown estático? Absurdo Total.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next.js?&lt;/strong&gt; Era minha ideia original, mas&amp;hellip; o setup inicial me travou. Configurar TypeScript, ESLint, Prettier, escolher entre Pages Router vs App Router, decidir sobre SSR vs SSG vs ISR&amp;hellip; Cara, eu só queria escrever um post para começar o blog :(&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Vercel&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vercel&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vercel&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Por que escolhi:&lt;/strong&gt;&lt;/em&gt;
+Uso Vercel há anos. Nunca me deu problema. É aquilo: &lt;em&gt;&amp;ldquo;time que está ganhando não se mexe&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Além da familiaridade, outros motivos seriam:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Grátis&lt;/strong&gt; pra projetos pessoais (com limites generosos)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy automático&lt;/strong&gt; a cada push no GitHub&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analytics embutido&lt;/strong&gt; (simples &amp;amp; funcional)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preview deployments&lt;/strong&gt; automáticos pra pull requests&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UI/UX excelente&lt;/strong&gt; - não preciso ler docs pra entender&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conectei o repo, cliquei em &amp;ldquo;Deploy&amp;rdquo;, esperei 2 minutos. Funcionou.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Alternativas:&lt;/strong&gt;&lt;/em&gt;
+Considerei brevemente &lt;strong&gt;Netlify&lt;/strong&gt; e &lt;strong&gt;GitHub Pages&lt;/strong&gt;, mas honestamente? Não tinha motivo pra trocar. Netlify oferece funcionalidades similares à Vercel (ambas são ótimas). GitHub Pages é ainda mais simples, mas tem algumas limitações com builds customizados.&lt;/p&gt;
+&lt;p&gt;No fim, escolhi Vercel porque já estava na minha zona de conforto. E nesse projeto, reduzir fricção era mais importante que explorar alternativas. Já tinha fricção mental suficiente. Não precisava adicionar fricção técnica também.&lt;/p&gt;
+&lt;p&gt;Se você nunca usou nenhuma das três, todas funcionariam bem pro mesmo propósito. Escolha a que tiver melhor documentação pro seu caso.&lt;/p&gt;
+&lt;h5&gt;Ferramentas São Temporárias&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ferramentas-são-temporárias&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ferramentas-s%c3%a3o-tempor%c3%a1rias&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;O lance é que em 5 anos talvez eu migre esse blog pra outra stack. Ou não. Tanto faz.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Tecnologias mudam.&lt;/strong&gt;&lt;/em&gt; Hugo pode cair em desuso. Vercel pode virar paga. JavaScript pode inventar um novo framework revolucionário (de novo).&lt;/p&gt;
+&lt;p&gt;Mas &lt;em&gt;&lt;strong&gt;minha capacidade de adaptar, criar e recomeçar&lt;/strong&gt;&lt;/em&gt; — isso não muda. E o mais importante: &lt;strong&gt;o conteúdo que eu escrever vai continuar relevante&lt;/strong&gt;, independente da ferramenta que usei pra publicá-lo.&lt;/p&gt;
+&lt;p&gt;Markdown é Markdown. Posts sobre comunicação, carreira, e decisões técnicas não expiram porque mudei de gerador de site.&lt;/p&gt;
+&lt;p&gt;No fim, ferramentas são temporárias. Sua criatividade e habilidade de comunicar, não.&lt;/p&gt;
+&lt;h3&gt;O Que Esse Deploy Ensinou&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-esse-deploy-ensinou&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-esse-deploy-ensinou&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Fazer o deploy desse blog me ensinou mais sobre processo do que sobre tecnologia. Aqui vão as lições práticas que levei:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Técnico:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bugs em produção não são um bicho de 7 cabeças. Aquele erro de build que deu na Vercel? Foi resolvido em 15 minutos. Não foi um bicho de sete cabeças.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;É impressionante como Hugo compila tão rápido.&lt;/strong&gt; &lt;code&gt;hugo server&lt;/code&gt; → ver resultado em 2 segundos. Isso acelera MUITO o desenvolvimento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Psicológico:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O pensamento de &amp;ldquo;ainda não estar pronto&amp;rdquo; me paralisava mais que qualquer bug real. Passei semanas preocupado com o que poderia dar errado. Quando finalmente fiz o deploy, a maioria dos meus medos era imaginários&lt;/li&gt;
+&lt;li&gt;Feedback do mundo real &amp;gt; mil horas de planejamento. No fim descobri que o layout dos posttypes tinha bug. No localhost, tava &amp;ldquo;funcionando&amp;rdquo;. Produção é o teste real.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Agora é só continuar&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;agora-é-só-continuar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#agora-%c3%a9-s%c3%b3-continuar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;No post anterior, falei sobre perfeccionismo como medo disfarçado. Este post seria meu jeito superar — mesmo que temporariamente — essa paralisia.&lt;/p&gt;
+&lt;p&gt;O blog não está perfeito. Ainda tem bugs. Ainda falta muito conteúdo. &lt;em&gt;&lt;strong&gt;E está tudo bem por agora.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Se você também tem um projeto mofando no seu GitHub esperando o momento ideal: faça o deploy hoje. O feedback do mundo real vale mais que 100 horas de planejamento no localhost.&lt;/p&gt;
+&lt;p&gt;Hora de escrever o próximo post. E o próximo. E o próximo&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Fontes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fontes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fontes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Documentação:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/documentation/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imfing.github.io/hextra/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hextra Theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vercel.com/docs&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vercel Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Posts/recursos que ajudaram:&lt;/strong&gt;
+&lt;a href=&#34;https://imfing.github.io/hextra/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meu Novo Blog - Como Eu Fiz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Repositório do blog:&lt;/strong&gt;
+&lt;a href=&#34;github.com/DevTroli/trolismind&#34;&gt;Troli&amp;rsquo;s Mind&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;div
+  class=&#34;hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800&#34;
+&gt;
+  &lt;span
+    class=&#34;hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300&#34;
+    &gt;Tags:
+  &lt;/span&gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#deploy &lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#vercel &lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#mvp&lt;/span
+  &gt;
+  
+&lt;/div&gt;
+
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

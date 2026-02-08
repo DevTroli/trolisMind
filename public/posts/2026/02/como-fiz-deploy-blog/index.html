@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Como fiz o deploy desse blog – Troli&#39;s Mind</title>
+  <meta name="description" content="Hugo &#43; Hextra &#43; Vercel em 30 minutos de setup" /><link rel="canonical" href="http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/" itemprop="url" />
+
+<meta property="og:title" content="Como fiz o deploy desse blog">
+<meta
+  property="og:description"
+  content="
+    Hugo &#43; Hextra &#43; Vercel em 30 minutos de setup
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/"><meta property="article:section" content="posts">
+
+<meta
+  property="article:published_time"
+  content="2026-01-31T12:11:13-03:00">
+
+
+<meta
+  property="article:modified_time"
+  content="2026-01-31T12:11:13-03:00">
+
+
+
+  <meta itemprop="name" content="Como fiz o deploy desse blog">
+  <meta itemprop="description" content="Hugo &#43; Hextra &#43; Vercel em 30 minutos de setup">
+  <meta itemprop="datePublished" content="2026-01-31T12:11:13-03:00">
+  <meta itemprop="dateModified" content="2026-01-31T12:11:13-03:00">
+  <meta itemprop="wordCount" content="1440">
+  <meta itemprop="keywords" content="Snippets">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Como fiz o deploy desse blog">
+  <meta name="twitter:description" content="Hugo &#43; Hextra &#43; Vercel em 30 minutos de setup">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+
+
+  <script>
+    
+
+    function setTheme(theme) {
+      document.documentElement.classList.remove("light", "dark");
+
+      if (theme !== "light" && theme !== "dark") {
+       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      document.documentElement.classList.add(theme);
+      document.documentElement.style.colorScheme = theme;
+    }
+
+    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
+
+  </script>
+
+  <script>
+    
+
+    if (localStorage.getItem('banner-closed')) {
+      document.documentElement.style.setProperty("--hextra-banner-height", "0px");
+      document.documentElement.classList.add("hextra-banner-hidden");
+    }
+  </script>
+
+  
+  
+  </head>
+<body><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-2 hx:h-16 hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/logo.svg" alt="Logo" height="20" width="20" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/logo.svg" alt="Dark Logo" height="20" width="20" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none" title="Troli&#39;s Mind">Troli&#39;s Mind</span>
+</a>
+<a
+  title=""
+  href="/sobre/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Sobre</span>
+</a><button type="button" aria-label="Menu" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
+  
+  <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+    <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="Search..."
+      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+  </div>
+  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      
+          <li class="open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/posts/"
+    
+  >Posts
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
+    </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+    href="/posts/2026/02/como-fiz-deploy-blog/"
+    
+  >Como fiz o deploy desse blog
+    </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              ></a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/posts/2026/01/medo-do-fracasso/"
+    
+  >Você não é perfeccionista, você é um medroso com uma desculpa
+    </a>
+              
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/sobre/"
+    
+  >Sobre Mim
+    </a></li>
+          <li class=""><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/principios/"
+    
+  >Meu Grail Diary Tech
+    </a></li>
+    </ul>
+
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div></div>
+  
+  
+    <div class="hx:md:hidden  hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:grow hx:flex-col"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-md hx:ring-1 hx:ring-black/5 hx:bg-white hx:py-1 hx:text-sm hx:shadow-lg hx:dark:ring-white/20 hx:dark:bg-neutral-800"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+  >
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="light"
+        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="dark"
+        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="system"
+        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+  </ul>
+</div></div></div></aside>
+    
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#do-sdd-para-internet">Do SDD para internet
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#0-setup-local">0. Setup Local
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#1-setup-local--github">1. Setup Local → GitHub
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#2-vercel-conectar-e-fazer-o-deploy">2. Vercel: Conectar e fazer o Deploy
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#3-o-primeiro-bug-em-produ%c3%a7%c3%a3o">3. O Primeiro bug em produção
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#stack-escolhida">Stack Escolhida
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#fun%c3%a7%c3%a3o-vs-est%c3%a9tica">Função vs Estética
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#hugo--hextra">Hugo &#43; Hextra
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#vercel">Vercel
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#ferramentas-s%c3%a3o-tempor%c3%a1rias">Ferramentas São Temporárias
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-que-esse-deploy-ensinou">O Que Esse Deploy Ensinou
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#agora-%c3%a9-s%c3%b3-continuar">Agora é só continuar
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#fontes">Fontes
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+        
+        <br class="hx:mt-1.5 hx:text-sm" />
+        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Como fiz o deploy desse blog</h1>
+        <div class="hx:mb-16"></div>
+        <div class="content">
+          <div
+  class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
+  style="text-align: center; border-bottom: 1px solid var(--gray-200)"
+>
+   Troli | 31 Jan 2026  |
+  <span
+    class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
+    >Snippets</span
+  >
+</div>
+
+<p>No <a href="/posts/2026/01/medo-do-fracasso/">post anterior</a>, escrevi sobre como perfeccionismo é medo disfarçado. Depois de dizer tudo aquilo não posso ficar só na teoria — este post documenta o deploy real que finalmente tirou o Troli&rsquo;s Mind do localhost. Porque o deploy de um blog estático com Hugo + Vercel levaria literalmente 10 minutos. Eu levei mais de <em><strong>1 mês</strong></em>. O problema nem foi devido a complexidade na configuração — foi psicológico.</p>
+<p>Sendo direto o processo técnico para mim levou uns 30 minutos. O processo mental de &ldquo;pressionar os botões&rdquo; levou semanas.</p>
+<p>Se você também tem projetos mofando no seu GitHub que nunca tocaram na realidade, este post pode ser útil para você que está lendo e para o meu eu do futuro, quando esquecer como configurei tudo isso.</p>
+<h3>Do SDD para internet<span class="hx:absolute hx:-mt-20" id="do-sdd-para-internet"></span>
+    <a href="#do-sdd-para-internet" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>0. Setup Local<span class="hx:absolute hx:-mt-20" id="0-setup-local"></span>
+    <a href="#0-setup-local" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#007f7f"># Comandos que você realmente executou</span>
+</span></span><span style="display:flex;"><span>hugo new site trolismind
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> trolismind
+</span></span><span style="display:flex;"><span>git init.</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<h4>1. Setup Local → GitHub<span class="hx:absolute hx:-mt-20" id="1-setup-local--github"></span>
+    <a href="#1-setup-local--github" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Depois de ter o blog rodando em <code>localhost:1313</code> com o Hugo+Hextra, o primeiro passo foi versionar isso no Git (não farei um tutorial de git, mas no futuro irei fazer um guia melhor). Agora Vou listar os comandos que usei para versiornar o código para mostrar como git é bem simples na real</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#007f7f"># Inicializar repositório Git</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Adicionar todos os arquivos que quero versionar</span>
+</span></span><span style="display:flex;"><span>git add nome_arquivo ou .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Primeiro commit</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;🎉 Initial commit: Hugo + Hextra setup&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Conectar com GitHub (crie o repo lá antes)</span>
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/DevTroli/trolisMind.git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Trocar o nome padrão da branch para Main por boas práticas</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Enviar todo o código para o GitHub para versionar o código</span>
+</span></span><span style="display:flex;"><span>git push -u origin main</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<hr>
+<h4>2. Vercel: Conectar e fazer o Deploy<span class="hx:absolute hx:-mt-20" id="2-vercel-conectar-e-fazer-o-deploy"></span>
+    <a href="#2-vercel-conectar-e-fazer-o-deploy" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p><em><strong>A) Criar conta na Vercel</strong></em></p>
+<ul>
+<li>Acessei <a href="https://vercel.com"target="_blank" rel="noopener">vercel.com</a></li>
+<li>Fiz login com minha conta do GitHub</li>
+</ul>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_login.png" alt="Screenshot: Lista de repositórios na Vercel"  loading="lazy" /></p>
+<p><em><strong>B) Importar o projeto do GitHub</strong></em></p>
+<ul>
+<li>Cliquei em &ldquo;Add New Project&rdquo;</li>
+<li>A Vercel detectou automaticamente meu repo <code>trolisMind</code></li>
+<li>Selecionei ele</li>
+</ul>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_newproject.png" alt="Screenshot: Lista de repositórios na Vercel"  loading="lazy" /></p>
+<!-- TODO: Adicionar print mostrando a tela de seleção de repo -->
+<p><em><strong>C) Configuração do Build</strong></em>
+A Vercel não detectou automaticamente que era Hugo logo precisei ajustar</p>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_build.png" alt="Screenshot: Build settings na Vercel"  loading="lazy" /></p>
+<!-- TODO: Adicionar print das configurações de build -->
+<p>Configurações que usei:</p>
+<ul>
+<li><strong>Framework Preset:</strong> Hugo</li>
+<li><strong>Build Command:</strong> <code>hugo --gc --minify</code></li>
+<li><strong>Output Directory:</strong> <code>public</code></li>
+<li><strong>Install Command:</strong> (deixei vazio, Vercel resolve automaticamente)</li>
+</ul>
+<p><em><strong>4) Variáveis de ambiente</strong></em> (se necessário) No meu caso, não precisei configurar nenhuma env var nesse primeiro deploy. Mas se você tiver coisas como tokens de API ou configurações sensíveis, é aqui que vai.</p>
+<p><em><strong>5) Deploy!</strong></em> Cliquei em &ldquo;Deploy&rdquo; e espere a mágica acontecer</p>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post2_deploy.png" alt="Screenshot: Build em progresso"  loading="lazy" /></p>
+<p><strong>Tempo total:</strong> ~2 minutos até a vercel fazer o build da aplicação e fazer o blog estar no ar.</p>
+<p><em><strong>Gerando a URL padrão da Vercel [nome_repo]+vercel.app:</strong></em> <code>trolismind.vercel.app</code></p>
+<hr>
+<h4>3. O Primeiro bug em produção<span class="hx:absolute hx:-mt-20" id="3-o-primeiro-bug-em-produção"></span>
+    <a href="#3-o-primeiro-bug-em-produ%c3%a7%c3%a3o" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p><em><strong>Spoiler:</strong></em> O primeiro deploy não funcionou de primeira.</p>
+<p><strong>O erro:</strong></p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><pre><code>Error: failed to render pages: render of &#34;posttypes&#34; failed</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><strong>O que aconteceu:</strong> Tive um problema de layout nos <code>posttypes</code> e ele só apareceu <em><strong>depois do deploy em produção</strong></em>. No localhost tava funcionando, mas na Vercel deu pau.</p>
+<p><em><strong>Como resolvi:</strong></em></p>
+<ol>
+<li>Li o log de erro completo na Vercel (não só a primeira linha)</li>
+<li>Identifiquei que era um problema no template <code>layouts/posttypes/list.html</code></li>
+<li>Voltei pro código local, corrigi o bug</li>
+<li>Fiz commit + push pro GitHub</li>
+<li><strong>Vercel fez redeploy automático</strong> (bom demais a propósito)</li>
+</ol>
+<p><em><strong>Tempo pra resolver:</strong></em> ~15 minutos debugando + 2 minutos esperando o novo deploy.</p>
+<p><em><strong>Lição aprendida:</strong></em> Bugs que não aparecem no <code>hugo server -D</code> podem aparecer em produção. Por isso é importante fazer deploy cedo, mesmo que o blog não esteja &ldquo;perfeito&rdquo;.</p>
+<hr>
+<h3>Stack Escolhida<span class="hx:absolute hx:-mt-20" id="stack-escolhida"></span>
+    <a href="#stack-escolhida" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h5>Função vs Estética<span class="hx:absolute hx:-mt-20" id="função-vs-estética"></span>
+    <a href="#fun%c3%a7%c3%a3o-vs-est%c3%a9tica" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><p>Existe um dilema clássico em qualquer projeto pessoal: escolher entre <strong>o que resolve</strong> (função) e <strong>o que te empolga</strong> (estética). Um código impecável mas sem identidade é como um robô eficiente. Um design deslumbrante mas sem propósito é um castelo de areia.</p>
+<p>Queria uma stack perfeita: moderna, escalável, impressionante. Gastei horas comparando frameworks, lendo benchmarks, planejando arquiteturas. <em><strong>E não escrevi uma linha de conteúdo.</strong></em></p>
+<p>Até que li <a href="https://akitaonrails.com/2025/09/10/meu-novo-blog-como-eu-fiz/"target="_blank" rel="noopener">este post no blog do Akita</a> sobre como ele fez o blog dele. E uma mensagem fixou na minha mente:</p>
+<blockquote>
+  <p><em>&ldquo;O blog perfeito não existe — just fucking write!&rdquo;</em></p>
+</blockquote>
+<p>Percebi que estava usando a escolha de tecnologia como <strong>desculpa sofisticada para não começar</strong>. Paralisia por análise disfarçada de &ldquo;pesquisa técnica&rdquo;.</p>
+<p>A real é que as melhores escolhas não são as mais modernas, mas <strong>as que te deixam focar no que importa</strong>. E pro Troli&rsquo;s Mind, o que importa é escrever.</p>
+<h5>Hugo + Hextra<span class="hx:absolute hx:-mt-20" id="hugo--hextra"></span>
+    <a href="#hugo--hextra" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><p><em><strong>Por que escolhi:</strong></em>
+Hugo é um gerador de sites estáticos notório por uma razão simples: <strong>é absurdamente rápido e direto ao ponto</strong>. Perfeito pra quem vem de contexto tech, mas quer desenvolver habilidades de escrita, não virar especialista em build pipelines.</p>
+<p>O workflow é super simples:</p>
+<ol>
+<li>Escrevo markdown no Obsidian</li>
+<li>Rodo <code>hugo server</code> pra ver localmente</li>
+<li>Faço <code>git push</code></li>
+<li>Deploy automático acontece</li>
+</ol>
+<p>Não tem nada para se configurar. Não tem &ldquo;hmm, deixa eu atualizar essas 17 dependências que ficaram vulneráveis&rdquo;.</p>
+<p><em><strong>Sobre o Hextra:</strong></em> Me pareceu o tema ideal - minimalista, limpo, focado em <strong>conteúdo</strong>. E de graça. Quando vi o demo, pensei: &ldquo;Perfeito. Não preciso customizar nada. Posso começar a escrever hoje.&rdquo;</p>
+<p>E foi exatamente o que fiz.</p>
+<p><strong>Alternativas que considerei:</strong></p>
+<ul>
+<li><strong>Django?</strong> Seria como usar uma bazuca pra matar uma formiga. Framework web completo com ORM, admin panel, autenticação&hellip; pra servir markdown estático? Absurdo Total.</li>
+<li><strong>Next.js?</strong> Era minha ideia original, mas&hellip; o setup inicial me travou. Configurar TypeScript, ESLint, Prettier, escolher entre Pages Router vs App Router, decidir sobre SSR vs SSG vs ISR&hellip; Cara, eu só queria escrever um post para começar o blog :(</li>
+</ul>
+<h5>Vercel<span class="hx:absolute hx:-mt-20" id="vercel"></span>
+    <a href="#vercel" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><p><em><strong>Por que escolhi:</strong></em>
+Uso Vercel há anos. Nunca me deu problema. É aquilo: <em>&ldquo;time que está ganhando não se mexe&rdquo;</em>.</p>
+<p>Além da familiaridade, outros motivos seriam:</p>
+<ul>
+<li><strong>Grátis</strong> pra projetos pessoais (com limites generosos)</li>
+<li><strong>Deploy automático</strong> a cada push no GitHub</li>
+<li><strong>Analytics embutido</strong> (simples &amp; funcional)</li>
+<li><strong>Preview deployments</strong> automáticos pra pull requests</li>
+<li><strong>UI/UX excelente</strong> - não preciso ler docs pra entender</li>
+</ul>
+<p>Conectei o repo, cliquei em &ldquo;Deploy&rdquo;, esperei 2 minutos. Funcionou.</p>
+<p><em><strong>Alternativas:</strong></em>
+Considerei brevemente <strong>Netlify</strong> e <strong>GitHub Pages</strong>, mas honestamente? Não tinha motivo pra trocar. Netlify oferece funcionalidades similares à Vercel (ambas são ótimas). GitHub Pages é ainda mais simples, mas tem algumas limitações com builds customizados.</p>
+<p>No fim, escolhi Vercel porque já estava na minha zona de conforto. E nesse projeto, reduzir fricção era mais importante que explorar alternativas. Já tinha fricção mental suficiente. Não precisava adicionar fricção técnica também.</p>
+<p>Se você nunca usou nenhuma das três, todas funcionariam bem pro mesmo propósito. Escolha a que tiver melhor documentação pro seu caso.</p>
+<h5>Ferramentas São Temporárias<span class="hx:absolute hx:-mt-20" id="ferramentas-são-temporárias"></span>
+    <a href="#ferramentas-s%c3%a3o-tempor%c3%a1rias" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><p>O lance é que em 5 anos talvez eu migre esse blog pra outra stack. Ou não. Tanto faz.</p>
+<p><em><strong>Tecnologias mudam.</strong></em> Hugo pode cair em desuso. Vercel pode virar paga. JavaScript pode inventar um novo framework revolucionário (de novo).</p>
+<p>Mas <em><strong>minha capacidade de adaptar, criar e recomeçar</strong></em> — isso não muda. E o mais importante: <strong>o conteúdo que eu escrever vai continuar relevante</strong>, independente da ferramenta que usei pra publicá-lo.</p>
+<p>Markdown é Markdown. Posts sobre comunicação, carreira, e decisões técnicas não expiram porque mudei de gerador de site.</p>
+<p>No fim, ferramentas são temporárias. Sua criatividade e habilidade de comunicar, não.</p>
+<h3>O Que Esse Deploy Ensinou<span class="hx:absolute hx:-mt-20" id="o-que-esse-deploy-ensinou"></span>
+    <a href="#o-que-esse-deploy-ensinou" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Fazer o deploy desse blog me ensinou mais sobre processo do que sobre tecnologia. Aqui vão as lições práticas que levei:</p>
+<p><em><strong>Técnico:</strong></em></p>
+<ul>
+<li>Bugs em produção não são um bicho de 7 cabeças. Aquele erro de build que deu na Vercel? Foi resolvido em 15 minutos. Não foi um bicho de sete cabeças.</li>
+<li><strong>É impressionante como Hugo compila tão rápido.</strong> <code>hugo server</code> → ver resultado em 2 segundos. Isso acelera MUITO o desenvolvimento.</li>
+</ul>
+<p><em><strong>Psicológico:</strong></em></p>
+<ul>
+<li>O pensamento de &ldquo;ainda não estar pronto&rdquo; me paralisava mais que qualquer bug real. Passei semanas preocupado com o que poderia dar errado. Quando finalmente fiz o deploy, a maioria dos meus medos era imaginários</li>
+<li>Feedback do mundo real &gt; mil horas de planejamento. No fim descobri que o layout dos posttypes tinha bug. No localhost, tava &ldquo;funcionando&rdquo;. Produção é o teste real.</li>
+</ul>
+<h3>Agora é só continuar<span class="hx:absolute hx:-mt-20" id="agora-é-só-continuar"></span>
+    <a href="#agora-%c3%a9-s%c3%b3-continuar" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>No post anterior, falei sobre perfeccionismo como medo disfarçado. Este post seria meu jeito superar — mesmo que temporariamente — essa paralisia.</p>
+<p>O blog não está perfeito. Ainda tem bugs. Ainda falta muito conteúdo. <em><strong>E está tudo bem por agora.</strong></em></p>
+<p>Se você também tem um projeto mofando no seu GitHub esperando o momento ideal: faça o deploy hoje. O feedback do mundo real vale mais que 100 horas de planejamento no localhost.</p>
+<p>Hora de escrever o próximo post. E o próximo. E o próximo&hellip;</p>
+<hr>
+<h3>Fontes<span class="hx:absolute hx:-mt-20" id="fontes"></span>
+    <a href="#fontes" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Documentação:</strong></p>
+<ul>
+<li><a href="https://gohugo.io/documentation/"target="_blank" rel="noopener">Hugo Docs</a></li>
+<li><a href="https://imfing.github.io/hextra/"target="_blank" rel="noopener">Hextra Theme</a></li>
+<li><a href="https://vercel.com/docs"target="_blank" rel="noopener">Vercel Docs</a></li>
+</ul>
+<p><strong>Posts/recursos que ajudaram:</strong>
+<a href="https://imfing.github.io/hextra/"target="_blank" rel="noopener">Meu Novo Blog - Como Eu Fiz</a></p>
+<p><strong>Repositório do blog:</strong>
+<a href="github.com/DevTroli/trolismind">Troli&rsquo;s Mind</a></p>
+<hr>
+
+<div
+  class="hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800"
+>
+  <span
+    class="hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300"
+    >Tags:
+  </span>
+  
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#deploy </span
+  >
+  
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#vercel </span
+  >
+  
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#mvp</span
+  >
+  
+</div>
+
+
+
+        </div>
+        <div class="hx:mt-16"></div>
+        
+      </main>
+    </article>
+  </div>
+
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
+        <script defer src="/en.search.js" integrity=""></script>
+  </body>
+</html>
