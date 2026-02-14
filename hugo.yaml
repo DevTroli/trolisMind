@@ -1,0 +1,142 @@
+# ===== CONFIGURAÇÃO BÁSICA =====
+title: "Troli's Mind"
+baseURL: "https://trolismind.vercel.app/"  # Atualiza com sua URL real
+languageCode: "pt-BR"
+defaultContentLanguage: "pt-br"
+enableEmoji: true
+
+# ===== IDIOMAS =====
+languages:
+  pt-br:
+    languageName: "Português"
+    weight: 1
+
+# ===== OUTPUTS =====
+outputs:
+  home: [HTML, RSS]
+
+# ===== MÓDULOS (HEXTRA) =====
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+# ===== MARKUP & SYNTAX HIGHLIGHTING =====
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Permite HTML raw nos posts
+  highlight:
+    style: "gruvbox-dark"
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    lineNumbersInTable: true
+    tabWidth: 4
+
+# ===== MENU PRINCIPAL (NAVBAR) =====
+menu:
+  main:
+    # Theme toggle (dark/light mode)
+    - name: Theme
+      weight: 0
+      params:
+        type: theme-toggle
+    
+    # Sobre
+    - name: Sobre
+      pageRef: /sobre
+      weight: 1
+    
+    # Search (ativado via params.search)
+    - name: Search
+      weight: 2
+      params:
+        type: search
+    
+    # GitHub
+    - name: GitHub ↗
+      url: "https://github.com/DevTroli/trolisMind"
+      weight: 3
+      params:
+        icon: github
+    
+    # RSS
+    - name: RSS
+      url: "/index.xml"
+      weight: 4
+      params:
+        icon: rss
+
+  # Sidebar (links sociais - opcional)
+  sidebar:
+    - name: GitHub
+      weight: 1
+      url: "https://github.com/DevTroli"
+      params:
+        icon: github
+    
+    - name: LinkedIn
+      weight: 2
+      url: "https://www.linkedin.com/in/pablotroli/"
+      params:
+        icon: linkedin
+
+# ===== PARÂMETROS DO SITE =====
+params:
+  # Descrição e autor
+  description: "Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia"
+  author: "Troli"
+  
+  # Largura da página (full, wide, normal)
+  pageWidth: "full"
+  
+  # ===== NAVBAR =====
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  
+  # ===== SEARCH (FLEXSEARCH) =====
+  search:
+    enable: true
+    type: "flexsearch"
+    flexsearch:
+      index: "content"
+      tokenize: "forward"
+  
+  # ===== FOOTER =====
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false  # Remove "Powered by Hugo"
+    copyright: "© 2025 Troli's Mind — Conteúdo com autenticidade, profundidade e contexto"
+  
+  # ===== SEO =====
+  seo:
+    enable: true
+    twitterCard: "summary_large_image"
+    defaultImage: "/images/og-default.jpg"
+  
+  # ===== HEXTRA ESPECÍFICO =====
+  hextra:
+    showThemeCredit: false
+  
+  # ===== EDIT URL (DESABILITADO) =====
+  editURL:
+    enable: false
+
+# ===== PERMALINKS =====
+permalinks:
+  sobre: "/sobre/"
+
+# ===== SITEMAP =====
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+# ===== TAXONOMIAS =====
+taxonomies:
+  posttype: "posttypes"
+  tag: "tags"

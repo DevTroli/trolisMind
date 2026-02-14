@@ -20,6 +20,18 @@ title = "Troli's Mind"
   author = "Troli"
   pageWidth = "full"
 
+  [params.search]
+  enable = true
+  type = "flexsearch"
+
+  [params.search.flexsearch]
+    # Índice: quanto maior, mais pesado mas mais preciso
+    # Valores: 0 (básico) até 9 (completo)
+    index = "content"
+    
+    # Tokenize: como quebra as palavras
+    tokenize = "forward"
+
   [params.footer]
     enable = false
     copyright = "© 2025 Troli's Mind — Conteúdo com autenticidade, profundidade e contexto"
