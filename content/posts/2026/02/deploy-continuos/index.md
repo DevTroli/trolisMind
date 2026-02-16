@@ -1,7 +1,7 @@
 ---
 title: "Deploy Continuos"
 description: "Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação."
-date: 2026-02-14T13:28:34-03:00
+date: 2026-02-17T13:28:34-03:00
 author: "Troli"
 posttype: ["careernotes"]     # OBRIGATÓRIO - escolha 1: rant, deepdives, careernotes, snippets, design, library, offtopic
 milestone: []    # Opcional: qual saga editorial pertence
