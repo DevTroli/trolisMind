@@ -1,9 +1,13 @@
-# ===== CONFIGURAÇÃO BÁSICA =====
 title: "Troli's Mind"
-baseURL: "https://trolismind.vercel.app/"  # Atualiza com sua URL real
+baseURL: "https://trolismind.vercel.app/" 
 languageCode: "pt-BR"
 defaultContentLanguage: "pt-br"
 enableEmoji: true
+
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
 # ===== IDIOMAS =====
 languages:
