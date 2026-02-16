@@ -1,11 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Troli&#39;s Mind – Posttype</title>
+    <title>Troli&#39;s Mind – Posttypes</title>
     <link>http://localhost:1313/posttype/</link>
-    <description>Recent content in Posttype on Troli&#39;s Mind</description>
+    <description>Recent content in Posttypes on Troli&#39;s Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 31 Jan 2026 12:11:13 -0300</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/posttype/index.xml" rel="self" type="application/rss+xml" />
     

@@ -16,6 +16,85 @@
     
     
     <item>
+      <title>Deploy Continuos</title>
+      <link>http://localhost:1313/posts/2026/02/deploy-continuos/</link>
+      <pubDate>Sat, 14 Feb 2026 13:28:34 -0300</pubDate>
+      
+      <guid>http://localhost:1313/posts/2026/02/deploy-continuos/</guid>
+      <description>
+        
+        
+        &lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 14 Feb 2026  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+    &gt;Careernotes&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;h2&gt;TL;DR (Too Long Dind&amp;rsquo;t Read)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tldr-too-long-dindt-read&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tldr-too-long-dindt-read&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Botando a cara a tapas&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;botando-a-cara-a-tapas&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#botando-a-cara-a-tapas&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;[Linka com o Post 1 sobre medo e Post 2 sobre deploy]
+Passei muito tempo sem fazer deploy. Quando finalmente fiz, descobri que &amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A nocividade de não fazer deploys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-nocividade-de-não-fazer-deploys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-nocividade-de-n%c3%a3o-fazer-deploys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Não existe nada mais nocivo no desenvolvimento de software do que ficar meses sem fazer deploy para produção. É como deixar um carro na garagem por três meses e depois se surpreender quando ele não quer dar partida. Ou como abandonar uma caixa vazia por um ano e esperar que ela não se deteriore com o tempo - spoiler alert: ela vai se deteriorar sozinha.&lt;/p&gt;
+&lt;h2&gt;Deploy Contínuo vs &amp;ldquo;O Deploy perfeito&amp;rdquo;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;deploy-contínuo-vs-o-deploy-perfeito&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deploy-cont%c3%adnuo-vs-o-deploy-perfeito&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;[Comparação prática]&lt;/p&gt;
+&lt;p&gt;Tabela visual:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Deploy Contínuo&lt;/th&gt;
+          &lt;th&gt;Deploy &amp;ldquo;Perfeito&amp;rdquo;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bugs pequenos, fixes rápidos&lt;/td&gt;
+          &lt;td&gt;Bugs catastróficos, fixes lentos&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Feedback real constante&lt;/td&gt;
+          &lt;td&gt;Suposições acumuladas&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Confiança crescente&lt;/td&gt;
+          &lt;td&gt;Ansiedade crescente&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Como Implementar devidamente&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;como-implementar-devidamente&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#como-implementar-devidamente&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;[Passos concretos baseados no seu setup]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Git push = deploy automático (seu caso)&lt;/li&gt;
+&lt;li&gt;Testes básicos antes do deploy&lt;/li&gt;
+&lt;li&gt;Rollback fácil se der merda&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;O Que Mudou Depois de muitos deploys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-mudou-depois-de-muitos-deploys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-mudou-depois-de-muitos-deploys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;[Conteudo sobre isso]&lt;/p&gt;
+&lt;h2&gt;Código parado é código morto&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;código-parado-é-código-morto&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%b3digo-parado-%c3%a9-c%c3%b3digo-morto&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Minhas Conclusões&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Fontes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fontes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fontes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- Se aplicável --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;url&#34;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;url&#34;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Como fiz o deploy desse blog</title>
       <link>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</link>
       <pubDate>Sat, 31 Jan 2026 12:11:13 -0300</pubDate>
@@ -42,10 +121,10 @@
     &lt;a href=&#34;#do-sdd-para-internet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;0. Setup Local&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;0-setup-local&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#0-setup-local&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Comandos que você realmente executou&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site trolismind
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fff;font-weight:bold&#34;&gt;cd&lt;/span&gt; trolismind
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Comandos que você realmente executou&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site trolismind
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; trolismind
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
     title=&#34;Copy code&#34;
@@ -59,23 +138,23 @@
     &lt;a href=&#34;#1-setup-local--github&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Depois de ter o blog rodando em &lt;code&gt;localhost:1313&lt;/code&gt; com o Hugo+Hextra, o primeiro passo foi versionar isso no Git (não farei um tutorial de git, mas no futuro irei fazer um guia melhor). Agora Vou listar os comandos que usei para versiornar o código para mostrar como git é bem simples na real&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Inicializar repositório Git&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Adicionar todos os arquivos que quero versionar&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add nome_arquivo ou .
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Primeiro commit&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;🎉 Initial commit: Hugo + Hextra setup&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Conectar com GitHub (crie o repo lá antes)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin https://github.com/DevTroli/trolisMind.git
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Trocar o nome padrão da branch para Main por boas práticas&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# Enviar todo o código para o GitHub para versionar o código&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin main&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Inicializar repositório Git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Adicionar todos os arquivos que quero versionar&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add nome_arquivo ou .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Primeiro commit&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;🎉 Initial commit: Hugo + Hextra setup&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Conectar com GitHub (crie o repo lá antes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin https://github.com/DevTroli/trolisMind.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Trocar o nome padrão da branch para Main por boas práticas&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Enviar todo o código para o GitHub para versionar o código&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin main&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
     title=&#34;Copy code&#34;
