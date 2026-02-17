@@ -16,6 +16,132 @@
     
     
     <item>
+      <title>Deploy Continuos</title>
+      <link>http://localhost:1313/posts/2026/02/deploy-continuos/</link>
+      <pubDate>Tue, 17 Feb 2026 11:38:34 -0300</pubDate>
+      
+      <guid>http://localhost:1313/posts/2026/02/deploy-continuos/</guid>
+      <description>
+        
+        
+        &lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 17 Feb 2026  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+    &gt;Careernotes&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;Deploy frequente não é sobre CI/CD ou automação. É sobre ver seus projetos tocando a realidade. Hoje isso é criminalmente simples com Vercel, Netlify e afins - e mesmo assim a maioria dos devs ainda deixa tudo apodrecendo no localhost.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Botando a cara a tapas&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;botando-a-cara-a-tapas&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#botando-a-cara-a-tapas&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;No &lt;a href=&#34;http://localhost:1313/posts/2026/01/medo-do-fracasso/&#34;&gt;primeiro post&lt;/a&gt; falei sobre perfeccionismo como medo disfarçado. No &lt;a href=&#34;http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/&#34;&gt;segundo&lt;/a&gt; documentei como finalmente tirei o Troli&amp;rsquo;s Mind do localhost depois de mais de 1 mês adiando algo que levou 30 minutos.&lt;/p&gt;
+&lt;p&gt;Mas tem uma coisa que não contei direito: &lt;em&gt;&lt;strong&gt;o que acontece quando você para de ter medo e começa a deployar de verdade&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Não estou falando só do blog. Estou falando de todos os projetos - pessoais, freelances, experimentos, aquele CRUD que você fez pra aprender algo novo. Cada um deles vive numa bifurcação simples:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A) Fica no localhost pra sempre&lt;/strong&gt;&lt;/em&gt; ou &lt;em&gt;&lt;strong&gt;B) Toca a realidade&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;E a diferença entre os dois não é mais técnica. Nunca foi tão fácil quanto hoje.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A nocividade de não fazer deploys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-nocividade-de-não-fazer-deploys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-nocividade-de-n%c3%a3o-fazer-deploys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Não existe nada mais nocivo no desenvolvimento de software do que deixar projetos mofando no localhost por meses.&lt;/p&gt;
+&lt;p&gt;É como deixar um carro na garagem por três meses e se surpreender quando ele não quer dar partida. A bateria descarregou. Os pneus murcharam. Algum bicho fez ninho no motor. O abandono cria problemas que não existiriam com uso regular.&lt;/p&gt;
+&lt;p&gt;Com código é idêntico. Cada dia que você adia o deploy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dependências ficam desatualizadas (e você só descobre quando tentar atualizar 47 pacotes de uma vez)&lt;/li&gt;
+&lt;li&gt;Seu ambiente local diverge da produção (e você só descobre quando der pau)&lt;/li&gt;
+&lt;li&gt;Bugs se acumulam silenciosamente (e você só descobre quando soltar tudo de uma vez)&lt;/li&gt;
+&lt;li&gt;Sua confiança no processo diminui (porque deploy vira &amp;ldquo;evento traumático&amp;rdquo; em vez de rotina)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mas o pior efeito colateral é outro: você perde a sensação de que o projeto é real.&lt;/p&gt;
+&lt;p&gt;Um projeto que só existe no seu HD é teoria. Um projeto que toca a internet é realidade.&lt;/p&gt;
+&lt;h2&gt;Deploy Contínuo vs &amp;ldquo;Deploy Ideal&amp;rdquo;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;deploy-contínuo-vs-deploy-ideal&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deploy-cont%c3%adnuo-vs-deploy-ideal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;em&gt;&lt;strong&gt;Deploy Contínuo&lt;/strong&gt;&lt;/em&gt;:&lt;/th&gt;
+          &lt;th&gt;&lt;em&gt;&lt;strong&gt;Deploy &amp;ldquo;Ideal&amp;rdquo;&lt;/strong&gt;&lt;/em&gt;:&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bugs pequenos descobertos cedo&lt;/td&gt;
+          &lt;td&gt;Bugs catastróficos descobertos tarde&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fixes em minutos&lt;/td&gt;
+          &lt;td&gt;Fixes em dias (você perdeu o contexto)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Feedback real constante&lt;/td&gt;
+          &lt;td&gt;Suposições acumuladas por meses&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Confiança no processo cresce&lt;/td&gt;
+          &lt;td&gt;Ansiedade sobre deploy cresce&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Deploy vira rotina&lt;/td&gt;
+          &lt;td&gt;Deploy vira trauma&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Projeto parece real&lt;/td&gt;
+          &lt;td&gt;Projeto parece eterno rascunho&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Antes era uma porre. Agora é ridiculamente simples&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;antes-era-uma-porre-agora-é-ridiculamente-simples&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#antes-era-uma-porre-agora-%c3%a9-ridiculamente-simples&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aqui tá o ponto que me deixa mais cismado é quando vejo amigos desenvolvedores com projeto mofando no GitHub, como se fosse um cemitério, não um hub de repositórios:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Anos atrás fazer deploy era um tanto sofrido:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configurar servidor do zero&lt;/li&gt;
+&lt;li&gt;Gerenciar SSH, NGINX, certificado SSL&lt;/li&gt;
+&lt;li&gt;Configurar pipelines manualmente&lt;/li&gt;
+&lt;li&gt;Rezar pra não dar merda em produção&lt;/li&gt;
+&lt;li&gt;Quando dava, debugar sem ferramentas decentes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hoje com Vercel, Netlify, Railway, Render:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Isso é tudo que você precisa&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ↑ Isso já é o deploy. Sério.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Você conecta o repositório uma vez, configura em 5 minutos, e a partir daí &lt;strong&gt;cada push é um deploy automático&lt;/strong&gt;. SSL grátis. CDN global. Preview deployments automáticos pra cada branch. Rollback em um clique.&lt;/p&gt;
+&lt;p&gt;Não tem mais desculpa técnica. A única barreira que sobrou é psicológica.&lt;/p&gt;
+&lt;h2&gt;Código parado É código morto&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;código-parado-é-código-morto&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%b3digo-parado-%c3%a9-c%c3%b3digo-morto&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Código que não toca a realidade não existe de verdade.&lt;/p&gt;
+&lt;p&gt;Pode ser bonito, pode ser bem arquitetado, pode ter testes unitários perfeitos. Se ninguém usa, se não resolve problema nenhum, se vive eternamente no seu HD - &lt;strong&gt;não existe&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;E hoje, com toda a infraestrutura disponível gratuitamente, deixar um projeto no localhost é uma escolha ativa. Você está escolhendo ativamente que ele não exista de verdade.&lt;/p&gt;
+&lt;p&gt;Não precisa ser perfeito. Não precisa ter todas as features. Não precisa impressionar ninguém.&lt;/p&gt;
+&lt;p&gt;Precisa estar &lt;strong&gt;no ar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Faça o deploy hoje. Mesmo que seja feio. Mesmo que tenha bugs. Mesmo que seja só pra você ver funcionando num domínio real.&lt;/p&gt;
+&lt;p&gt;Porque código parado é código morto. E projeto morto não ajuda ninguém - nem você.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Fontes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fontes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fontes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://martinfowler.com/bliki/ContinuousDelivery.html&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Continuous Delivery - Martin Fowler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://basecamp.com/gettingreal/03.7-have-an-enemy&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seven Principles Shipping - basecamp.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://justinnoel.dev/2020/02/08/just-ship-it/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ship it - justinnoel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Post anterior: &lt;a href=&#34;http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/&#34;&gt;Como Fiz o Deploy Desse Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Como fiz o deploy desse blog</title>
       <link>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</link>
       <pubDate>Sat, 31 Jan 2026 12:11:13 -0300</pubDate>

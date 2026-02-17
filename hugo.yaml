@@ -6,8 +6,6 @@ enableEmoji: true
 
 
 buildDrafts: false
-buildFuture: false
-buildExpired: false
 
 # ===== IDIOMAS =====
 languages:
