@@ -16,6 +16,10 @@ languages:
 # ===== OUTPUTS =====
 outputs:
   home: [HTML, RSS]
+  taxonomy: [HTML]
+  term: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
 
 # ===== MÓDULOS (HEXTRA) =====
 module:
@@ -26,7 +30,7 @@ module:
 markup:
   goldmark:
     renderer:
-      unsafe: true  # Permite HTML raw nos posts
+      unsafe: true
   highlight:
     style: "gruvbox-dark"
     noClasses: false
@@ -40,31 +44,26 @@ markup:
 # ===== MENU PRINCIPAL (NAVBAR) =====
 menu:
   main:
-    # Theme toggle (dark/light mode)
     - name: Theme
       weight: 0
       params:
         type: theme-toggle
-    
-    # Sobre
+
     - name: Sobre
       pageRef: /sobre
       weight: 1
 
-      # GitHub
     - name: GitHub ↗
       url: "https://github.com/DevTroli/trolisMind"
       weight: 2
       params:
         icon: github   
 
-    # Search (ativado via params.search)
     - name: Search
       weight: 3
       params:
         type: search
     
-    # RSS
     - name: RSS
       url: "/index.xml"
       weight: 4
@@ -73,11 +72,9 @@ menu:
 
 # ===== PARÂMETROS DO SITE =====
 params:
-  # Descrição e autor
   description: "Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia"
   author: "Troli"
   
-  # Largura da página (full, wide, normal)
   pageWidth: "full"
   
   # ===== NAVBAR =====
@@ -95,9 +92,9 @@ params:
   
   # ===== FOOTER =====
   footer:
-    enable: true
+    enable: false
     displayCopyright: true
-    displayPoweredBy: false  # Remove "Powered by Hugo"
+    displayPoweredBy: false
     copyright: "© 2025 Troli's Mind — Conteúdo com autenticidade, profundidade e contexto"
   
   # ===== SEO =====
@@ -110,7 +107,6 @@ params:
   hextra:
     showThemeCredit: false
   
-  # ===== EDIT URL (DESABILITADO) =====
   editURL:
     enable: false
 
@@ -126,5 +122,5 @@ sitemap:
 
 # ===== TAXONOMIAS =====
 taxonomies:
-  posttype: "posttypes"
+  posttype: "posttype"
   tag: "tags"
