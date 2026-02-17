@@ -136,6 +136,36 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 
+&lt;div
+  class=&#34;hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800&#34;
+&gt;
+  &lt;span
+    class=&#34;hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300&#34;
+    &gt;Tags:
+  &lt;/span&gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#deploy&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#ci-cd&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#devops&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#boas-praticas&lt;/span
+  &gt;
+  
+&lt;/div&gt;
+
 
 
       </description>
@@ -372,7 +402,7 @@ Considerei brevemente &lt;strong&gt;Netlify&lt;/strong&gt; e &lt;strong&gt;GitHu
   
   &lt;span
     class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
-    &gt;#mvp&lt;/span
+    &gt;#devops&lt;/span
   &gt;
   
 &lt;/div&gt;

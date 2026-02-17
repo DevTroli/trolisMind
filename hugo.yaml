@@ -50,19 +50,19 @@ menu:
     - name: Sobre
       pageRef: /sobre
       weight: 1
-    
-    # Search (ativado via params.search)
-    - name: Search
-      weight: 2
-      params:
-        type: search
-    
-    # GitHub
+
+      # GitHub
     - name: GitHub ↗
       url: "https://github.com/DevTroli/trolisMind"
+      weight: 2
+      params:
+        icon: github   
+
+    # Search (ativado via params.search)
+    - name: Search
       weight: 3
       params:
-        icon: github
+        type: search
     
     # RSS
     - name: RSS
@@ -70,20 +70,6 @@ menu:
       weight: 4
       params:
         icon: rss
-
-  # Sidebar (links sociais - opcional)
-  sidebar:
-    - name: GitHub
-      weight: 1
-      url: "https://github.com/DevTroli"
-      params:
-        icon: github
-    
-    - name: LinkedIn
-      weight: 2
-      url: "https://www.linkedin.com/in/pablotroli/"
-      params:
-        icon: linkedin
 
 # ===== PARÂMETROS DO SITE =====
 params:

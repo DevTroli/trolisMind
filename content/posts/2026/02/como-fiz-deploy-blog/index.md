@@ -6,7 +6,7 @@ author: "Troli"
 posttype: ["snippets"]
 milestone: []    # Opcional: qual saga editorial pertence
 roadmap: []      # Opcional: qual guia/roadmap se relaciona
-tags: ["deploy ", "vercel ", "mvp"]
+tags: ["deploy ", "vercel ", "devops"]
 draft: false
 ---
 

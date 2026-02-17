@@ -6,7 +6,7 @@ author: "Troli"
 posttype: ["careernotes"]     # OBRIGATÓRIO - escolha 1: rant, deepdives, careernotes, snippets, design, library, offtopic
 milestone: []    # Opcional: qual saga editorial pertence
 roadmap: []      # Opcional: qual guia/roadmap se relaciona
-tags: []         # 3-5 tags específicas
+tags: ["deploy", "ci-cd", "devops", "boas-praticas"]
 draft: false      # Sempre inicia como rascunho
 ---
 
