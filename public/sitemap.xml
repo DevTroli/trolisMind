@@ -2,12 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/dev-web/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/homemade/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/03/hub-pablotroli/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/snippets/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-05T20:11:54-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/boas-praticas/</loc>
+    <lastmod>2026-02-17T11:38:34-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/careernotes/</loc>
+    <lastmod>2026-02-17T11:38:34-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ci-cd/</loc>
+    <lastmod>2026-02-17T11:38:34-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/deploy/</loc>
+    <lastmod>2026-02-17T11:38:34-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/posts/2026/02/deploy-continuos/</loc>
     <lastmod>2026-02-17T11:38:34-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/tags/devops/</loc>
     <lastmod>2026-02-17T11:38:34-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -18,16 +73,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/deploy-/</loc>
-    <lastmod>2026-01-31T12:11:13-03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/mvp/</loc>
-    <lastmod>2026-01-31T12:11:13-03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-31T12:11:13-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -43,6 +88,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/mentalidade/</loc>
+    <lastmod>2026-01-23T11:14:25-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/mvp/</loc>
     <lastmod>2026-01-23T11:14:25-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -67,10 +117,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posttype/careernotes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/posttype/deepdives/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -87,19 +133,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posttype/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posttypes/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/posttype/rant/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posttype/snippets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
