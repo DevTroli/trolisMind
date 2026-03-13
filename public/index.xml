@@ -4,10 +4,14 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Troli&#39;s Mind</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Tue, 17 Feb 2026 11:38:34 -0300</lastBuildDate>
+    <language>pt-BR</language>
     
-	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>contato@pablotroli.com (Troli)</managingEditor>
+    <webMaster>contato@pablotroli.com (Troli)</webMaster>
+    
+    <lastBuildDate>Fri, 13 Mar 2026 08:56:14 -0300</lastBuildDate>
+    
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
       

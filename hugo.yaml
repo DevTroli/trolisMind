@@ -4,7 +4,6 @@ languageCode: "pt-BR"
 defaultContentLanguage: "pt-br"
 enableEmoji: true
 
-
 buildDrafts: false
 
 # ===== IDIOMAS =====
@@ -74,6 +73,7 @@ menu:
 params:
   description: "Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia"
   author: "Troli"
+  authorEmail: "contato@pablotroli.com"
   
   pageWidth: "full"
   

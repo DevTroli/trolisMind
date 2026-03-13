@@ -4,10 +4,14 @@
     <link>http://localhost:1313/posts/</link>
     <description>Recent content on Troli&#39;s Mind</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>pt-BR</language>
+    
+    <managingEditor>contato@pablotroli.com (Troli)</managingEditor>
+    <webMaster>contato@pablotroli.com (Troli)</webMaster>
+    
     <lastBuildDate>Fri, 03 Oct 2025 23:08:17 -0300</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +20,363 @@
     
     
     <item>
+      <title>Design é um problema técnico. Trate como tal.</title>
+      <link>http://localhost:1313/posts/2026/03/odeio-design/</link>
+      <pubDate>Fri, 13 Mar 2026 08:56:14 -0300</pubDate>
+      <author>contato@pablotroli.com (Troli)</author>
+      <guid>http://localhost:1313/posts/2026/03/odeio-design/</guid>
+      <description>
+        
+        
+        &lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 13 Mar 2026  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+    &gt;Design&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;Primeiro projeto profissional de design: 5 painéis pra stand de feira corporativa, CMYK, 300 PPI, entrega em 2 semanas. Não nada gosto de design, mas fiz. Esse post é sobre o processo de ser ruim em algo novo.&lt;/p&gt;
+&lt;h2&gt;Quando o design bate a porta&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quando-o-design-bate-a-porta&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#quando-o-design-bate-a-porta&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Houve a oportunidade de fazer um projeto simples no papel de design: criar 5 painéis pra um stand de uma feira comercial. Cliente de logística, identidade visual definida, requisitos técnicos claros.&lt;/p&gt;
+&lt;p&gt;Meus conhecimento eram apenas de Figma e o básico.
+Experiência com projetos de impressão: zero.
+Vontade de fazer design: também zero.&lt;/p&gt;
+&lt;p&gt;Mas recusar seria fácil demais. E no fácil não se aprende nada.&lt;/p&gt;
+&lt;h2&gt;Parte 1: Contas que ninguém te ensina em design&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parte-1-contas-que-ninguém-te-ensina-em-design&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parte-1-contas-que-ningu%c3%a9m-te-ensina-em-design&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;O cliente passou as dimensões em milímetros. Faz sentido — é impressão física. O Figma trabalha em pixels. Primeira tarefa antes de abrir qualquer ferramenta seria converter.&lt;/p&gt;
+&lt;p&gt;A fórmula é direta:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;(milímetros ÷ 25.4) × PPI = pixels&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O 25.4 é a quantidade de milímetros numa polegada. PPI é a resolução alvo — no caso, 300.&lt;/p&gt;
+&lt;p&gt;Aplicando no painel principal de 2890mm de largura:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;(2890 ÷ 25.4) × 300 = 34.133 pixels&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;34 mil pixels de largura. Uma tela 4K tem 3840. Esse painel tinha quase 9 vezes a largura de um monitor 4K.&lt;/p&gt;
+&lt;p&gt;Cada painel grande resultou em cerca de 900 milhões de pixels totais. Tenha em mente esse número porque voltará para assombrar mais tarde.&lt;/p&gt;
+&lt;p&gt;A lição aqui é banal mas ignorada com frequência até descobrir que as proporções estavam erradas depois de horas de trabalho custa muito mais do que 10 minutos de cálculo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Parte 2: o feedback genérico e o que fazer com ele&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parte-2-o-feedback-genérico-e-o-que-fazer-com-ele&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parte-2-o-feedback-gen%c3%a9rico-e-o-que-fazer-com-ele&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A primeira versão seguiu o briefing à risca. Painéis limpos, identidade visual aplicada, conteúdo correto.&lt;/p&gt;
+&lt;p&gt;O retorno do cliente: &amp;ldquo;está muito simples.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Feedback genérico é chato e alguns diriam que é um problema de especificação. &amp;ldquo;Simples&amp;rdquo; pode ser raso demais, falta de elementos visuais, aparência amadora — ou outra coisa completamente diferente.&lt;/p&gt;
+&lt;p&gt;A abordagem foi pesquisar o padrão do setor. Stands de empresas de logística em feiras corporativas têm um vocabulário visual consistente: ícones de modal de transporte, mapas-múndi, conexões globais, dados e estatísticas. O que a Versão 1 não tinha.&lt;/p&gt;
+&lt;p&gt;A Versão 2 chegou já aplicando esse padrão: ícones ao lado de cada serviço, cards com hierarquia visual mais clara, mapa-múndi no fundo do painel principal, QR code e contato no banner. Nessa versão tornei mais funcional.&lt;/p&gt;
+&lt;p&gt;Mas aí que veio o problema real.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Parte 3: a premissa errada&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parte-3-a-premissa-errada&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parte-3-a-premissa-errada&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Depois da Versão 2 aprovada, o cliente apontou um problema no Painel #03: as fotos de navios, aviões e caminhões não representavam o negócio deles.&lt;/p&gt;
+&lt;p&gt;A empresa é &lt;em&gt;freight forwarder&lt;/em&gt; — despachante, agente de carga. Eles fazem a burocracia: documentação, desembaraço alfandegário, coordenação logística. Não operam os veículos.&lt;/p&gt;
+&lt;p&gt;Mostrar fotos de transporte estava posicionando a empresa como o que ela não é.&lt;/p&gt;
+&lt;p&gt;A solução foi refazer o painel com um mapa-múndi estilizado e conexões globais — Brasil no centro, linhas chegando nos principais hubs internacionais. Visual que comunica alcance e expertise em processos, não operação de frota.&lt;/p&gt;
+&lt;p&gt;Foram criadas duas versões: fundo branco e fundo verde.&lt;/p&gt;
+&lt;p&gt;A pergunta que teria evitado esse retrabalho: &amp;ldquo;vocês operam os veículos ou só coordenam a logística?&amp;rdquo; Duas frases no início do projeto economizam horas no meio. Se tivesse entendido melhor o negócio antes de criar os conceito visual&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Parte 4: o inferno técnico do CMYK no Linux&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parte-4-o-inferno-técnico-do-cmyk-no-linux&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parte-4-o-inferno-t%c3%a9cnico-do-cmyk-no-linux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aqui fica interessante.&lt;/p&gt;
+&lt;p&gt;Impressão usa CMYK. Telas usam RGB. São color spaces diferentes — CMYK é subtrativo (tinta), RGB é aditivo (luz), e algumas cores que existem em RGB simplesmente não existem em tinta. O Figma exporta só RGB. A conversão precisa acontecer depois.&lt;/p&gt;
+&lt;p&gt;A solução óbvia seria Adobe. Photoshop faz isso com três cliques. Mas o ambiente de trabalho é Arch Linux, sem licença Adobe.&lt;/p&gt;
+&lt;p&gt;A solução real é o ImageMagick:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert input.png -colorspace CMYK -density &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; output.png&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Simples. Exceto que não funcionou.&lt;/p&gt;
+&lt;p&gt;Nos painéis grandes, o processo morreu:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;341697 Morto    magick &amp;#34;$file&amp;#34; -colorspace CMYK -density 300 &amp;#34;$output&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O motivo volta aos 900 milhões de pixels. CMYK usa 4 canais de cor contra 3 do RGB. A conversão na memória de um único painel:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;34.133 × 26.397 pixels × 4 canais × 8 bits ≈ 3,6 GB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O sistema matou o processo por falta de RAM. O PNG é lossless — guarda tudo sem compressão, o que significa arquivo enorme e consumo proporcional de memória.&lt;/p&gt;
+&lt;p&gt;A solução foi trocar PNG por JPG com quality 95. Em impressão de grande formato, a diferença visual entre lossless e 95% de qualidade é indistinguível. O ganho em memória é drástico.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;magick input.png &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -colorspace CMYK &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -density &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -units PixelsPerInch &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -quality &lt;span class=&#34;m&#34;&gt;95&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    output.jpg&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Funcionou. Verificação:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;identify -format &lt;span class=&#34;s2&#34;&gt;&amp;#34;Colorspace: %[colorspace] | Resolution: %xx%y %U\n&amp;#34;&lt;/span&gt; output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Colorspace: CMYK | Resolution: 300x300 PixelsPerInch&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Arquivos prontos pra impressão, sem Adobe, sem Windows, sem pagar nada além do tempo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Parte 5: documentação é parte do produto&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parte-5-documentação-é-parte-do-produto&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parte-5-documenta%c3%a7%c3%a3o-%c3%a9-parte-do-produto&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Entregar só os arquivos finais seria incompleto.&lt;/p&gt;
+&lt;p&gt;Tive que criar um Style Guide documentando paleta de cores com códigos hex exatos, tipografia por painel, especificações técnicas, rationale de cada decisão de design, instruções de exportação e histórico de versões.&lt;/p&gt;
+&lt;p&gt;A estrutura de entrega:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;Projeto_Exhibition_Booth_FINAL/
+├── 01_Design_Files_CMYK/
+│   ├── Painel_01_CMYK_300ppi.jpg
+│   ├── Painel_02_CMYK_300ppi.jpg
+│   ├── Painel_03_WHITE_CMYK_300ppi.jpg
+│   ├── Painel_03_GREEN_CMYK_300ppi.jpg
+│   ├── Painel_04_CMYK_300ppi.jpg
+│   └── Painel_05_CMYK_300ppi.jpg
+├── 02_Documentation/
+│   └── Style_Guide_v2_FINAL.md
+└── README_DELIVERY.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;O que fica&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-fica&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-fica&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;2 horas/dia distribuídas em 14 dias. Três versões. Divergências criativas com o cliente. Um crash pesado de memória.&lt;/p&gt;
+&lt;p&gt;E no final: 6 arquivos CMYK prontos pra impressão, cliente satisfeito, projeto entregue.&lt;/p&gt;
+&lt;p&gt;Não é necessário gostar de design pra fazer design bem feito. O que é necessário é tratar o problema como qualquer outro problema técnico: entender os requisitos, quebrar em partes menores, iterar com base em feedback, documentar o processo.&lt;/p&gt;
+&lt;p&gt;A zona de conforto é um lugar confortável pra ficar parado.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;div
+  class=&#34;hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800&#34;
+&gt;
+  &lt;span
+    class=&#34;hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300&#34;
+    &gt;Tags:
+  &lt;/span&gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#design&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#figma&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#UI/UX&lt;/span
+  &gt;
+  
+&lt;/div&gt;
+
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Hub Pablotroli.com</title>
+      <link>http://localhost:1313/posts/2026/03/hub-pablotroli/</link>
+      <pubDate>Thu, 05 Mar 2026 20:11:54 -0300</pubDate>
+      <author>contato@pablotroli.com (Troli)</author>
+      <guid>http://localhost:1313/posts/2026/03/hub-pablotroli/</guid>
+      <description>
+        
+        
+        &lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 05 Mar 2026  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+    &gt;Snippets&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tinha um domínio comprado, um blog no ar, e nada na raiz. Transformei o &lt;code&gt;pablotroli.com&lt;/code&gt; num hub pessoal com identidade própria — estética de terminal, HTML/CSS/JS puro, zero dependências. Esse post é sobre as decisões que levaram até isso: da concepção às referências, da escolha de stack ao deploy.&lt;/p&gt;
+&lt;h2&gt;Construindo meu hub pessoal&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;construindo-meu-hub-pessoal&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#construindo-meu-hub-pessoal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Quando o domínio foi comprado não fazia ideia do que &lt;code&gt;pablotroli.com&lt;/code&gt; poderia ser. Queria usar como base pro blog - de início pensei em &lt;code&gt;pablotroli.com/mind&lt;/code&gt;, mas ainda não tinha aprendido sobre proxys e subdiretórios, então optei por um subdomínio separado.&lt;/p&gt;
+&lt;p&gt;A virada veio quando percebi que ter um subdomínio ativo e o domínio principal sem nada era quase uma contradição. Quem chegasse em &lt;code&gt;pablotroli.com&lt;/code&gt; não encontraria nada. E pra alguém que acredita que presença digital importa, mas passa boa parte do tempo no terminal, isso não fazia sentido.&lt;/p&gt;
+&lt;p&gt;Não uso redes sociais há anos e não curto muito o celular. Então pensei: esse domínio podia ser um catalisador de tudo que faço na internet — GitHub, LinkedIn, blog — num lugar só.&lt;/p&gt;
+&lt;p&gt;Porque é aquilo: &amp;ldquo;quem não é visto não é lembrado&amp;rdquo;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A concepção — qual era minha ideia principal&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-concepção--qual-era-minha-ideia-principal&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-concep%c3%a7%c3%a3o--qual-era-minha-ideia-principal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Antes de abrir qualquer aba de inspiração, já sabia algumas coisas com clareza: não queria um portfólio genérico com foto de perfil centralizada e três cards de projeto. Queria algo reconhecidamente meu — que um visitante olhasse e entendesse algo sobre quem eu sou antes de ler uma palavra.&lt;/p&gt;
+&lt;p&gt;A palavra que me veio foi &lt;em&gt;hub&lt;/em&gt;. Não portfólio, não página pessoal — um ponto central de onde tudo que faço na internet pode ser acessado. Blog, projetos, formas de contato. Simples, direto, mas com personalidade.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;As referências — o que cada uma ensinou&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;as-referências--o-que-cada-uma-ensinou&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#as-refer%c3%aancias--o-que-cada-uma-ensinou&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Antes de escrever uma linha, pesquisei hubs de devs. Três em especial influenciaram o resultado final de formas distintas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;taniarascia.com&lt;/strong&gt; ensinou que simplicidade não é ausência de conteúdo — é a escolha cuidadosa do que mostrar e como organizar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;cassie.codes&lt;/strong&gt; mostrou que uma página pessoal pode ser genuinamente expressiva sem perder funcionalidade.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;joshwcomeau.com&lt;/strong&gt; foi um estudo de sobriedade como identidade: direto, objetivo, mas inconfundível.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A identidade visual&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-identidade-visual&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-identidade-visual&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Essa foi a decisão mais fácil de tomar e a mais difícil de explicar sem soar clichê.&lt;/p&gt;
+&lt;p&gt;Escolhi um visual terminal/hacker por ser uma estética icônica pra mim. Sou um fã assumido de Linux (I use Arch, btw) e a maior parte dos meus dias, seja no lazer, no estudo ou no trabalho, passa dentro do terminal. Faço tudo que consigo sem encostar no mouse. Faz sentido que minha presença na web reflita isso.&lt;/p&gt;
+&lt;p&gt;A paleta resultante foi deliberada: verde neon &lt;code&gt;#39ff14&lt;/code&gt; como cor primária — referência direta aos monitores de fósforo dos anos 80 — e âmbar &lt;code&gt;#ffb700&lt;/code&gt; como destaque exclusivo pro blog, criando hierarquia visual sem precisar de tamanhos ou pesos diferentes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A decisão de stack&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-decisão-de-stack&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-decis%c3%a3o-de-stack&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Essa foi a parte que mais exigiu reflexão, e vale documentar o raciocínio porque a conclusão não é óbvia à primeira vista.&lt;/p&gt;
+&lt;p&gt;Considerei três caminhos:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Next.js&lt;/strong&gt; foi descartado rapidamente. O hub não tem estado, não tem rotas complexas, não tem nada que justifique um framework. E o ecossistema JavaScript muda rápido demais — daqui a dois anos teria manutenção periódica sem ter adicionado nada de valor real ao projeto.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C# ou Java&lt;/strong&gt; foi a opção mais tentadora intelectualmente. Estou aprendendo essas linguagens na Fatec agora, e existe algo genuinamente hacker em rodar um servidor C# pra servir uma página HTML estática. Mas a dívida técnica seria alta: deploy complexo, configuração de servidor, problemas que ainda não tenho maturidade pra resolver sem transformar o projeto numa dor de cabeça.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTML, CSS e JS puro&lt;/strong&gt; foi a escolha honesta. Não por falta de ambição — mas porque essa tríade é a web em sua forma mais fundamental. Existe desde o início, vai existir por muito tempo, e não tem dependências que quebram. Pra um hub que precisa de durabilidade acima de tudo, é a stack mais responsável.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Decisões técnicas que valem explicação&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;decisões-técnicas-que-valem-explicação&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#decis%c3%b5es-t%c3%a9cnicas-que-valem-explica%c3%a7%c3%a3o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Aqui o post muda de tom. O que vem a seguir é o processo técnico, as partes que achei mais interessantes de construir e que talvez sejam úteis pra quem quiser se inspirar e fazer algo parecido.&lt;/p&gt;
+&lt;h3&gt;A estrutura de arquivos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-estrutura-de-arquivos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-estrutura-de-arquivos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Três arquivos. Só isso.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;portfolio-hub/
+├── index.html   ← estrutura e semântica
+├── style.css    ← toda a identidade visual
+└── main.js      ← apenas o que CSS não consegue fazer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Essa separação garante que cada arquivo tem uma responsabilidade única e não invade a do outro. O HTML não tem estilos inline. O CSS não tem lógica. O JS não manipula visual além do estritamente necessário.&lt;/p&gt;
+&lt;h3&gt;O efeito CRT com CSS puro&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-efeito-crt-com-css-puro&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-efeito-crt-com-css-puro&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O efeito de monitor antigo que você vê na página é feito inteiramente em CSS, sem imagem externa ou biblioteca. São três camadas sobrepostas usando pseudo-elementos e um elemento auxiliar no HTML.&lt;/p&gt;
+&lt;p&gt;As &lt;strong&gt;scanlines&lt;/strong&gt; — as listras horizontais finas — são criadas com &lt;code&gt;repeating-linear-gradient&lt;/code&gt; no &lt;code&gt;::before&lt;/code&gt; do body. A ideia é simples: alternar faixas transparentes com faixas levemente escuras a cada 4px, simulando as linhas de varredura de monitores CRT.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;vignette&lt;/strong&gt; — o escurecimento nas bordas — usa um &lt;code&gt;radial-gradient&lt;/code&gt; no &lt;code&gt;::after&lt;/code&gt; do body. Monitores CRT escurecem naturalmente nas bordas por causa da curvatura do tubo; aqui replicamos isso com um gradiente que vai de transparente no centro até preto nas bordas.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;ruído&lt;/strong&gt; é gerado por um filtro SVG de turbulência fractal embutido como &lt;code&gt;data URI&lt;/code&gt; diretamente no CSS. Zero requisições extras, zero dependências — o browser renderiza o ruído nativamente.&lt;/p&gt;
+&lt;h3&gt;O efeito de digitação sem JavaScript&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-efeito-de-digitação-sem-javascript&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-efeito-de-digita%c3%a7%c3%a3o-sem-javascript&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A animação da tagline — aquele texto que parece estar sendo digitado — é feita só com CSS usando uma combinação de três propriedades que precisam funcionar juntas:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;tagline&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;overflow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;white-space&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nowrap&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;animation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.8&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;steps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;end&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;forwards&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.6&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;O &lt;code&gt;width&lt;/code&gt; começa em zero e cresce até 100% via &lt;code&gt;@keyframes&lt;/code&gt;. O &lt;code&gt;overflow: hidden&lt;/code&gt; esconde o texto enquanto o width ainda não chegou lá. O &lt;code&gt;white-space: nowrap&lt;/code&gt; impede que o texto quebre linha durante a animação. E o &lt;code&gt;steps()&lt;/code&gt; — em vez de uma transição suave — faz o crescimento acontecer em saltos discretos, imitando a digitação caractere por caractere. Fontes monospace são essenciais aqui: cada caractere tem exatamente a mesma largura, tornando a ilusão perfeita.&lt;/p&gt;
+&lt;h3&gt;O relógio em tempo real&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-relógio-em-tempo-real&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-rel%c3%b3gio-em-tempo-real&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;O único JavaScript necessário pro hub todo são basicamente 10 linhas: uma função que pega o horário atual com &lt;code&gt;toLocaleTimeString&lt;/code&gt; e a chama a cada segundo com &lt;code&gt;setInterval&lt;/code&gt;. Essa simplicidade é intencional — o JS existe aqui pra fazer exatamente o que o CSS não consegue: ler o relógio do sistema.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Deploy — GitHub Pages + Cloudflare&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;deploy--github-pages--cloudflare&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deploy--github-pages--cloudflare&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Em vez de Vercel ou Netlify, optei pelo GitHub Pages pela natureza simples que combina com a simplicidade do hub. Com o deploy acontecendo a cada &lt;code&gt;git push&lt;/code&gt;, só restou configurar o DNS pra ter um domínio personalizado — mas não vou me estender nisso aqui, porque estou escrevendo um post específico sobre DNS 101: o mínimo que você precisa saber pra ser produtivo com redes e infraestrutura.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;O que ficou pra v2&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;o-que-ficou-pra-v2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#o-que-ficou-pra-v2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Nem tudo que imaginei entrou na primeira versão. Deixei de fora conscientemente algumas coisas que poderiam virar scope creep e atrasar o lançamento:&lt;/p&gt;
+&lt;p&gt;Os &lt;strong&gt;posts recentes do blog&lt;/strong&gt; via RSS feed são tecnicamente simples — o Hugo já gera o feed, seria um &lt;code&gt;fetch()&lt;/code&gt; no JS — mas não eram necessários pro hub funcionar. Ficam pra uma iteração futura.&lt;/p&gt;
+&lt;p&gt;Um &lt;strong&gt;terminal interativo&lt;/strong&gt; como easter egg mais elaborado também ficou de fora. A ideia é boa mas pedia mais tempo de design do que queria investir agora.&lt;/p&gt;
+&lt;p&gt;Lançar algo funcional e com identidade forte é mais valioso do que segurar esperando perfeição.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Você pode ver o resultado em &lt;a href=&#34;https://pablotroli.com&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pablotroli.com&lt;/a&gt; e o código no &lt;a href=&#34;https://github.com/DevTroli/portfolio-hub&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;div
+  class=&#34;hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800&#34;
+&gt;
+  &lt;span
+    class=&#34;hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300&#34;
+    &gt;Tags:
+  &lt;/span&gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#homemade&lt;/span
+  &gt;
+  
+  &lt;span
+    class=&#34;hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded&#34;
+    &gt;#dev-web&lt;/span
+  &gt;
+  
+&lt;/div&gt;
+
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Deploy Continuos</title>
       <link>http://localhost:1313/posts/2026/02/deploy-continuos/</link>
       <pubDate>Tue, 17 Feb 2026 11:38:34 -0300</pubDate>
-      
+      <author>contato@pablotroli.com (Troli)</author>
       <guid>http://localhost:1313/posts/2026/02/deploy-continuos/</guid>
       <description>
         
@@ -175,7 +532,7 @@
       <title>Como fiz o deploy desse blog</title>
       <link>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</link>
       <pubDate>Sat, 31 Jan 2026 12:11:13 -0300</pubDate>
-      
+      <author>contato@pablotroli.com (Troli)</author>
       <guid>http://localhost:1313/posts/2026/02/como-fiz-deploy-blog/</guid>
       <description>
         
@@ -308,6 +665,7 @@ A Vercel não detectou automaticamente que era Hugo logo precisei ajustar&lt;/p&
 &lt;p&gt;Até que li &lt;a href=&#34;https://akitaonrails.com/2025/09/10/meu-novo-blog-como-eu-fiz/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;este post no blog do Akita&lt;/a&gt; sobre como ele fez o blog dele. E uma mensagem fixou na minha mente:&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;&amp;ldquo;O blog perfeito não existe — just fucking write!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
 &lt;/blockquote&gt;
 &lt;p&gt;Percebi que estava usando a escolha de tecnologia como &lt;strong&gt;desculpa sofisticada para não começar&lt;/strong&gt;. Paralisia por análise disfarçada de &amp;ldquo;pesquisa técnica&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;A real é que as melhores escolhas não são as mais modernas, mas &lt;strong&gt;as que te deixam focar no que importa&lt;/strong&gt;. E pro Troli&amp;rsquo;s Mind, o que importa é escrever.&lt;/p&gt;
