@@ -1,22 +1,147 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0">
   <channel>
-    <title>Troli&#39;s Mind – Troli&#39;s Mind</title>
+    <title>Troli&#39;s Mind</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Troli&#39;s Mind</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-BR</language>
+    <description>Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia</description>
+
     
-    <managingEditor>contato@pablotroli.com (Troli)</managingEditor>
-    <webMaster>contato@pablotroli.com (Troli)</webMaster>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/</link>
+      <pubDate>2025-10-03 23:08:17 -0300 -03</pubDate>
+      <description><ul class="posts-list" style="list-style-type: none">
+  
+  <li>
+    <h3><a href="/posts/2026/03/xampp-caseiro/">Fiz o meu proprio Xampp (DIY)</a></h3>
+    <small style="color: #9ca3af">
+      26 Mar 2026  |
+      <span>Snippets</span>
+    </small>
     
-    <lastBuildDate>Thu, 19 Mar 2026 07:49:09 -0300</lastBuildDate>
+    <div class="description" style="margin-bottom: 0.5rem">Tentei montar meu próprio ambiente de desenvolvimento — Nginx, PostgreSQL e PHP-FPM no Arch Linux.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#dev-web</span><span class="tag">#DIY</span><span class="tag">#linux</span>
+    </small>
     
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/03/visita-tecnica-oracle/">Na Oracle: Percebi o quanto preciso crescer/estudar</a></h3>
+    <small style="color: #9ca3af">
+      19 Mar 2026  |
+      <span>Careernotes</span>
+    </small>
     
+    <div class="description" style="margin-bottom: 0.5rem">Entre uma infraestrutura gigantesca e IA dedicada, vi o futuro de perto, mas saí com uma lição simples.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#VisitaTécnica</span><span class="tag">#InteligênciaArtificial</span><span class="tag">#JornadaDev</span><span class="tag">#Infra</span>
+    </small>
     
-      
-      
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/03/odeio-design/">Design é um problema técnico. Trate como tal.</a></h3>
+    <small style="color: #9ca3af">
+      13 Mar 2026  |
+      <span>Design</span>
+    </small>
     
+    <div class="description" style="margin-bottom: 0.5rem">Design é uma das coisas que menos gosto de fazer, Escrevi sobre o que aconteceu quando você trata estética como engenharia.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#design</span><span class="tag">#figma</span><span class="tag">#UI/UX</span>
+    </small>
+    
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/03/hub-pablotroli/">Hub Pablotroli.com</a></h3>
+    <small style="color: #9ca3af">
+      05 Mar 2026  |
+      <span>Snippets</span>
+    </small>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#homemade</span><span class="tag">#dev-web</span>
+    </small>
+    
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/02/deploy-continuos/">Deploy Continuos</a></h3>
+    <small style="color: #9ca3af">
+      17 Feb 2026  |
+      <span>Careernotes</span>
+    </small>
+    
+    <div class="description" style="margin-bottom: 0.5rem">Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#deploy</span><span class="tag">#ci-cd</span><span class="tag">#devops</span><span class="tag">#boas-praticas</span>
+    </small>
+    
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/02/como-fiz-deploy-blog/">Como fiz o deploy desse blog</a></h3>
+    <small style="color: #9ca3af">
+      31 Jan 2026  |
+      <span>Snippets</span>
+    </small>
+    
+    <div class="description" style="margin-bottom: 0.5rem">Hugo &#43; Hextra &#43; Vercel em 30 minutos de setup</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#deploy </span><span class="tag">#vercel </span><span class="tag">#devops</span>
+    </small>
+    
+  </li>
+  
+  <li>
+    <h3><a href="/posts/2026/01/medo-do-fracasso/">Você não é perfeccionista, você é um medroso com uma desculpa</a></h3>
+    <small style="color: #9ca3af">
+      23 Jan 2026  |
+      <span>Careernotes</span>
+    </small>
+    
+    <div class="description" style="margin-bottom: 0.5rem">Por que 15 projetos na gaveta não fazem de você um desenvolvedor, fazem de você um covarde organizado.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#mvp</span><span class="tag">#carreira</span><span class="tag">#mentalidade</span><span class="tag">#soft-skills</span>
+    </small>
+    
+  </li>
+  
+</ul></description>
+    </item>
+    
+    <item>
+      <title>Sobre Mim</title>
+      <link>http://localhost:1313/sobre/</link>
+      <pubDate>2025-10-03 11:05:26 -0300 -03</pubDate>
+      <description><h2>Prazer, eu sou o Troli 🤝<span class="hx:absolute hx:-mt-20" id="prazer-eu-sou-o-troli-"></span>
+    <a href="#prazer-eu-sou-o-troli-" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Um Desenvolvedor que está focado em aprimorar suas habilidades de comunicação por meio desse blog. Meu objetivo com este blog é simples, <strong>documentar minha jornada técnica e humana</strong>, criar um &ldquo;backup dos meus conhecimentos&rdquo; que me ajude a organizar ideias, compartilhar experiências reais e, quem sabe, inspirar outros pessoas a aprimorarem suas habilidades técnicas ou sociais.</p>
+<h2>💭 Minha Filosofia<span class="hx:absolute hx:-mt-20" id="-minha-filosofia"></span>
+    <a href="#-minha-filosofia" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><blockquote>
+  <p><em>&ldquo;O blog perfeito não existe — just fucking write!&rdquo;</em><br>
+— Fabio Akita</p></description>
+    </item>
+    
+    <item>
+      <title>Meu Grail Diary Tech</title>
+      <link>http://localhost:1313/principios/</link>
+      <pubDate>0001-01-01 00:00:00 &#43;0000 UTC</pubDate>
+      <description><p>Sou desenvolvedor. Como muitos devs, sempre fui melhor lidando com sistemas do que explicando ideias complexas para pessoas fora desse mundo.</p>
+<p>Este blog é meu laboratório pessoal para resolver isso — enquanto documento minha jornada tech de forma que faça sentido daqui a 3 anos (inclusive pra mim).</p>
+<p>Aqui escrevo <strong>primeiro para mim</strong>.
+Se ajudar outras pessoas no processo, melhor ainda.</p>
+<hr>
+<h3>O Que Você Vai Encontrar Aqui<span class="hx:absolute hx:-mt-20" id="o-que-você-vai-encontrar-aqui"></span>
+    <a href="#o-que-voc%c3%aa-vai-encontrar-aqui" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Troli’s Mind é um <strong>brain dump estruturado</strong>: um espaço onde conhecimento técnico fragmentado vira contexto, decisões e aprendizado real.</p></description>
+    </item>
     
   </channel>
 </rss>

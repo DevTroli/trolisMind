@@ -69,44 +69,46 @@ menu:
       params:
         icon: rss
 
-# ===== PARÂMETROS DO SITE =====
+author:
+  name: "Troli"
+  email: "contato@pablotroli.com"
+
 params:
   description: "Backup do cérebro sobre assuntos tech, sociais, cultura e filosofia"
   author: "Troli"
   authorEmail: "contato@pablotroli.com"
-  
   pageWidth: "full"
-  
+
   # ===== NAVBAR =====
   navbar:
     displayTitle: true
     displayLogo: false
-  
-  # ===== SEARCH (FLEXSEARCH) =====
+
+  # ===== SEARCH =====
   search:
     enable: true
     type: "flexsearch"
     flexsearch:
       index: "content"
       tokenize: "forward"
-  
+
   # ===== FOOTER =====
   footer:
     enable: false
     displayCopyright: true
     displayPoweredBy: false
     copyright: "© 2025 Troli's Mind — Conteúdo com autenticidade, profundidade e contexto"
-  
+
   # ===== SEO =====
   seo:
     enable: true
     twitterCard: "summary_large_image"
     defaultImage: "/images/og-default.jpg"
-  
-  # ===== HEXTRA ESPECÍFICO =====
+
+  # ===== HEXTRA =====
   hextra:
     showThemeCredit: false
-  
+
   editURL:
     enable: false
 

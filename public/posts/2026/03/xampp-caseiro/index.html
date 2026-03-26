@@ -8,42 +8,42 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Deploy Continuos – Troli&#39;s Mind</title>
-  <meta name="description" content="Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação." /><link rel="canonical" href="http://localhost:1313/posts/2026/02/deploy-continuos/" itemprop="url" />
+<title>Fiz o meu proprio Xampp (DIY) – Troli&#39;s Mind</title>
+  <meta name="description" content="Tentei montar meu próprio ambiente de desenvolvimento — Nginx, PostgreSQL e PHP-FPM no Arch Linux." /><link rel="canonical" href="http://localhost:1313/posts/2026/03/xampp-caseiro/" itemprop="url" />
 
-<meta property="og:title" content="Deploy Continuos">
+<meta property="og:title" content="Fiz o meu proprio Xampp (DIY)">
 <meta
   property="og:description"
   content="
-    Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação.
+    Tentei montar meu próprio ambiente de desenvolvimento — Nginx, PostgreSQL e PHP-FPM no Arch Linux.
   ">
 <meta
   property="og:type"
   content="
     article
   ">
-<meta property="og:url" content="http://localhost:1313/posts/2026/02/deploy-continuos/"><meta property="article:section" content="posts">
+<meta property="og:url" content="http://localhost:1313/posts/2026/03/xampp-caseiro/"><meta property="article:section" content="posts">
 
 <meta
   property="article:published_time"
-  content="2026-02-17T11:38:34-03:00">
+  content="2026-03-26T11:36:32-03:00">
 
 
 <meta
   property="article:modified_time"
-  content="2026-02-17T11:38:34-03:00">
+  content="2026-03-26T11:36:32-03:00">
 
 
 
-  <meta itemprop="name" content="Deploy Continuos">
-  <meta itemprop="description" content="Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação.">
-  <meta itemprop="datePublished" content="2026-02-17T11:38:34-03:00">
-  <meta itemprop="dateModified" content="2026-02-17T11:38:34-03:00">
-  <meta itemprop="wordCount" content="684">
-  <meta itemprop="keywords" content="Deploy,Ci-Cd,Devops,Boas-Praticas">
+  <meta itemprop="name" content="Fiz o meu proprio Xampp (DIY)">
+  <meta itemprop="description" content="Tentei montar meu próprio ambiente de desenvolvimento — Nginx, PostgreSQL e PHP-FPM no Arch Linux.">
+  <meta itemprop="datePublished" content="2026-03-26T11:36:32-03:00">
+  <meta itemprop="dateModified" content="2026-03-26T11:36:32-03:00">
+  <meta itemprop="wordCount" content="591">
+  <meta itemprop="keywords" content="Dev-Web,DIY,Linux">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Deploy Continuos">
-  <meta name="twitter:description" content="Deploy frequente além de uma boa prática técnica - é filosofia de vida contra procrastinação.">
+  <meta name="twitter:title" content="Fiz o meu proprio Xampp (DIY)">
+  <meta name="twitter:description" content="Tentei montar meu próprio ambiente de desenvolvimento — Nginx, PostgreSQL e PHP-FPM no Arch Linux.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -218,13 +218,46 @@
   >Posts
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
     </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
-        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><a
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
     href="/posts/2026/03/xampp-caseiro/"
     
   >Fiz o meu proprio Xampp (DIY)
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#primeiro-obst%c3%a1culo"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Primeiro obstáculo</a>
+            </li>
+          <li>
+              <a
+                href="#nginx--php-fpm"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Nginx 🤝 PHP-FPM</a>
+            </li>
+          <li>
+              <a
+                href="#error-404--502"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >ERROR 404 &amp; 502</a>
+            </li>
+          <li>
+              <a
+                href="#a-conex%c3%a3o-final"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >A conexão final</a>
+            </li>
+          <li>
+              <a
+                href="#o-que-ficou-de-aprendizado"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O que ficou de aprendizado</a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -250,52 +283,13 @@
   >Hub Pablotroli.com
     </a>
               
-            </li><li class="hx:flex hx:flex-col open"><a
+            </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
     href="/posts/2026/02/deploy-continuos/"
     
   >Deploy Continuos
     </a>
-  
-    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
-              <a
-                href="#botando-a-cara-a-tapas"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Botando a cara a tapas</a>
-            </li>
-          <li>
-              <a
-                href="#a-nocividade-de-n%c3%a3o-fazer-deploys"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >A nocividade de não fazer deploys</a>
-            </li>
-          <li>
-              <a
-                href="#deploy-cont%c3%adnuo-vs-deploy-ideal"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Deploy Contínuo vs “Deploy Ideal”</a>
-            </li>
-          <li>
-              <a
-                href="#antes-era-uma-porre-agora-%c3%a9-ridiculamente-simples"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Antes era uma porre. Agora é ridiculamente simples</a>
-            </li>
-          <li>
-              <a
-                href="#c%c3%b3digo-parado-%c3%a9-c%c3%b3digo-morto"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Código parado É código morto</a>
-            </li>
-          <li>
-              <a
-                href="#fontes"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Fontes</a>
-            </li>
-          </ul>
-  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -386,27 +380,23 @@
 <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#botando-a-cara-a-tapas">Botando a cara a tapas
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#primeiro-obst%c3%a1culo">Primeiro obstáculo
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#a-nocividade-de-n%c3%a3o-fazer-deploys">A nocividade de não fazer deploys
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#nginx--php-fpm">Nginx 🤝 PHP-FPM
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#deploy-cont%c3%adnuo-vs-deploy-ideal">Deploy Contínuo vs “Deploy Ideal”
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#error-404--502">ERROR 404 &amp; 502
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#antes-era-uma-porre-agora-%c3%a9-ridiculamente-simples">Antes era uma porre. Agora é ridiculamente simples
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#a-conex%c3%a3o-final">A conexão final
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#c%c3%b3digo-parado-%c3%a9-c%c3%b3digo-morto">Código parado É código morto
-        </a>
-      </li>
-      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#fontes">Fontes
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-que-ficou-de-aprendizado">O que ficou de aprendizado
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
@@ -425,92 +415,31 @@
       <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
         
         <br class="hx:mt-1.5 hx:text-sm" />
-        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Deploy Continuos</h1>
+        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Fiz o meu proprio Xampp (DIY)</h1>
         <div class="hx:mb-16"></div>
         <div class="content">
           <div
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 17 Feb 2026  |
+   Troli | 26 Mar 2026  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Careernotes</span
+    >Snippets</span
   >
 </div>
 
-<p>Deploy frequente não é sobre CI/CD ou automação. É sobre ver seus projetos tocando a realidade. Hoje isso é criminalmente simples com Vercel, Netlify e afins - e mesmo assim a maioria dos devs ainda deixa tudo apodrecendo no localhost.</p>
+<p>Normalmente o XAMPP e usado no Windows. Mas minha máquina roda Arch Linux. Tudo no Linux ainda mais no arch nao e tao simples quanto baixar e usar um .exe do xampp no windows</p>
+<p>Além de que eu não queria simplesmente instalar o XAMPP e seguir em frente. Queria entender o que ele faz por baixo: um servidor web, um banco de dados, uma linguagem de script — e como esses três conversam.</p>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post7_arch.png" alt="Arch Linux"  loading="lazy" /></p>
+<p>A motivação não era replicar. Era compreender.</p>
+<p>O plano tomou forma rápido: trocar o Apache pelo Nginx, o MySQL pelo PostgreSQL, e gerenciar tudo com as ferramentas que já uso no cotidiano. Um XAMPP caseiro, mas com minhas próprias configurações.</p>
 <hr>
-<h2>Botando a cara a tapas<span class="hx:absolute hx:-mt-20" id="botando-a-cara-a-tapas"></span>
-    <a href="#botando-a-cara-a-tapas" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>No <a href="/posts/2026/01/medo-do-fracasso/">primeiro post</a> falei sobre perfeccionismo como medo disfarçado. No <a href="/posts/2026/02/como-fiz-deploy-blog/">segundo</a> documentei como finalmente tirei o Troli&rsquo;s Mind do localhost depois de mais de 1 mês adiando algo que levou 30 minutos.</p>
-<p>Mas tem uma coisa que não contei direito: <em><strong>o que acontece quando você para de ter medo e começa a deployar de verdade</strong></em>.</p>
-<p>Não estou falando só do blog. Estou falando de todos os projetos - pessoais, freelances, experimentos, aquele CRUD que você fez pra aprender algo novo. Cada um deles vive numa bifurcação simples:</p>
-<p><em><strong>A) Fica no localhost pra sempre</strong></em> ou <em><strong>B) Toca a realidade</strong></em></p>
-<p>E a diferença entre os dois não é mais técnica. Nunca foi tão fácil quanto hoje.</p>
-<hr>
-<h2>A nocividade de não fazer deploys<span class="hx:absolute hx:-mt-20" id="a-nocividade-de-não-fazer-deploys"></span>
-    <a href="#a-nocividade-de-n%c3%a3o-fazer-deploys" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Não existe nada mais nocivo no desenvolvimento de software do que deixar projetos mofando no localhost por meses.</p>
-<p>É como deixar um carro na garagem por três meses e se surpreender quando ele não quer dar partida. A bateria descarregou. Os pneus murcharam. Algum bicho fez ninho no motor. O abandono cria problemas que não existiriam com uso regular.</p>
-<p>Com código é idêntico. Cada dia que você adia o deploy:</p>
-<ul>
-<li>Dependências ficam desatualizadas (e você só descobre quando tentar atualizar 47 pacotes de uma vez)</li>
-<li>Seu ambiente local diverge da produção (e você só descobre quando der pau)</li>
-<li>Bugs se acumulam silenciosamente (e você só descobre quando soltar tudo de uma vez)</li>
-<li>Sua confiança no processo diminui (porque deploy vira &ldquo;evento traumático&rdquo; em vez de rotina)</li>
-</ul>
-<p>Mas o pior efeito colateral é outro: você perde a sensação de que o projeto é real.</p>
-<p>Um projeto que só existe no seu HD é teoria. Um projeto que toca a internet é realidade.</p>
-<h2>Deploy Contínuo vs &ldquo;Deploy Ideal&rdquo;<span class="hx:absolute hx:-mt-20" id="deploy-contínuo-vs-deploy-ideal"></span>
-    <a href="#deploy-cont%c3%adnuo-vs-deploy-ideal" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
-  <thead>
-      <tr>
-          <th><em><strong>Deploy Contínuo</strong></em>:</th>
-          <th><em><strong>Deploy &ldquo;Ideal&rdquo;</strong></em>:</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Bugs pequenos descobertos cedo</td>
-          <td>Bugs catastróficos descobertos tarde</td>
-      </tr>
-      <tr>
-          <td>Fixes em minutos</td>
-          <td>Fixes em dias (você perdeu o contexto)</td>
-      </tr>
-      <tr>
-          <td>Feedback real constante</td>
-          <td>Suposições acumuladas por meses</td>
-      </tr>
-      <tr>
-          <td>Confiança no processo cresce</td>
-          <td>Ansiedade sobre deploy cresce</td>
-      </tr>
-      <tr>
-          <td>Deploy vira rotina</td>
-          <td>Deploy vira trauma</td>
-      </tr>
-      <tr>
-          <td>Projeto parece real</td>
-          <td>Projeto parece eterno rascunho</td>
-      </tr>
-  </tbody>
-</table>
-<h2>Antes era uma porre. Agora é ridiculamente simples<span class="hx:absolute hx:-mt-20" id="antes-era-uma-porre-agora-é-ridiculamente-simples"></span>
-    <a href="#antes-era-uma-porre-agora-%c3%a9-ridiculamente-simples" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Aqui tá o ponto que me deixa mais cismado é quando vejo amigos desenvolvedores com projeto mofando no GitHub, como se fosse um cemitério, não um hub de repositórios:</p>
-<p><em><strong>Anos atrás fazer deploy era um tanto sofrido:</strong></em></p>
-<ul>
-<li>Configurar servidor do zero</li>
-<li>Gerenciar SSH, NGINX, certificado SSL</li>
-<li>Configurar pipelines manualmente</li>
-<li>Rezar pra não dar merda em produção</li>
-<li>Quando dava, debugar sem ferramentas decentes</li>
-</ul>
-<p><strong>Hoje com Vercel, Netlify, Railway, Render:</strong></p>
+<h2>Primeiro obstáculo<span class="hx:absolute hx:-mt-20" id="primeiro-obstáculo"></span>
+    <a href="#primeiro-obst%c3%a1culo" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>PostgreSQL já estava instalado. Mas o comando <code>psql</code> retornava isso:</p>
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Isso é tudo que você precisa</span>
-</span></span><span class="line"><span class="cl">git push origin main
-</span></span><span class="line"><span class="cl"><span class="c1"># ↑ Isso já é o deploy. Sério.</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+<div><pre><code>FATAL: a conexão com o servidor no soquete &#34;/run/postgresql/.s.PGSQL.5432&#34; falhou</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button
     class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
     title="Copy code"
@@ -520,24 +449,104 @@
   </button>
 </div>
 </div>
-<p>Você conecta o repositório uma vez, configura em 5 minutos, e a partir daí <strong>cada push é um deploy automático</strong>. SSL grátis. CDN global. Preview deployments automáticos pra cada branch. Rollback em um clique.</p>
-<p>Não tem mais desculpa técnica. A única barreira que sobrou é psicológica.</p>
-<h2>Código parado É código morto<span class="hx:absolute hx:-mt-20" id="código-parado-é-código-morto"></span>
-    <a href="#c%c3%b3digo-parado-%c3%a9-c%c3%b3digo-morto" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Código que não toca a realidade não existe de verdade.</p>
-<p>Pode ser bonito, pode ser bem arquitetado, pode ter testes unitários perfeitos. Se ninguém usa, se não resolve problema nenhum, se vive eternamente no seu HD - <strong>não existe</strong>.</p>
-<p>E hoje, com toda a infraestrutura disponível gratuitamente, deixar um projeto no localhost é uma escolha ativa. Você está escolhendo ativamente que ele não exista de verdade.</p>
-<p>Não precisa ser perfeito. Não precisa ter todas as features. Não precisa impressionar ninguém.</p>
-<p>Precisa estar <strong>no ar</strong>.</p>
-<p>Faça o deploy hoje. Mesmo que seja feio. Mesmo que tenha bugs. Mesmo que seja só pra você ver funcionando num domínio real.</p>
-<p>Porque código parado é código morto. E projeto morto não ajuda ninguém - nem você.</p>
+<p>A investigação começou pelo <code>systemctl</code>:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status postgresql.service</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>O serviço falhava porque o cluster de dados nunca havia sido inicializado. O Arch Linux, diferente de um pacote como o XAMPP, entrega só as ferramentas — a responsabilidade de criar a fundação é sua.</p>
+<p>A solução:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo -iu postgres
+</span></span><span class="line"><span class="cl">initdb</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>Banco de dados funcionando. Primeira lição aprendida: não é porque está instalado que está configurado.</p>
 <hr>
-<h2>Fontes<span class="hx:absolute hx:-mt-20" id="fontes"></span>
-    <a href="#fontes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
-<li><a href="https://martinfowler.com/bliki/ContinuousDelivery.html"target="_blank" rel="noopener">Continuous Delivery - Martin Fowler</a></li>
-<li><a href="https://basecamp.com/gettingreal/03.7-have-an-enemy"target="_blank" rel="noopener">Seven Principles Shipping - basecamp.com</a></li>
-<li><a href="https://justinnoel.dev/2020/02/08/just-ship-it/"target="_blank" rel="noopener">Ship it - justinnoel</a></li>
-<li>Post anterior: <a href="/posts/2026/02/como-fiz-deploy-blog/">Como Fiz o Deploy Desse Blog</a></li>
-</ul>
+<h2>Nginx 🤝 PHP-FPM<span class="hx:absolute hx:-mt-20" id="nginx--php-fpm"></span>
+    <a href="#nginx--php-fpm" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Com o banco no ar, o próximo passo era o servidor web. Nginx instalado, <code>systemctl enable --now</code>, e a tela de &ldquo;Welcome to nginx!&rdquo; confirmou o funcionamento.</p>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post7_welcomeNgix.jpeg" alt="welcome Nginx"  loading="lazy" /></p>
+<p>Mas servir arquivos estáticos é trivial. A meta era fazer o Nginx conversar com o PHP. A solução é a dobradinha Nginx + PHP-FPM: o Nginx recebe a requisição e passa pro PHP-FPM executar.</p>
+<p>O problema apareceu na configuração. O arquivo <code>/etc/nginx/nginx.conf</code> tem uma estrutura hierárquica rígida — colocar um bloco <code>location</code> no lugar errado gera erros como:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><pre><code>location directive is not allowed here</code></pre></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>A solução foi adotar uma prática profissional desde o início: isolar a configuração do site em arquivo próprio dentro de <code>/etc/nginx/conf.d/</code>. Separação de responsabilidades, mesmo em ambiente local.</p>
+<hr>
+<h2>ERROR 404 &amp; 502<span class="hx:absolute hx:-mt-20" id="error-404--502"></span>
+    <a href="#error-404--502" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Com a configuração no lugar, o browser respondeu. Não com a página esperada — com um 404.</p>
+<p>O servidor funcionava. Ele simplesmente não encontrava o arquivo. O motivo: o Nginx roda como usuário <code>http</code> e não tinha permissão pra acessar o diretório pessoal <code>/home/troli</code>. Um conceito fundamental do Linux que havia passado batido.</p>
+<p>A correção foi um ajuste sutil:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="m">711</span> /home/troli</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p>Isso permite ao servidor &ldquo;atravessar&rdquo; o diretório sem poder ler seu conteúdo.</p>
+<p>O 404 virou 502. Progresso, mas ainda erro. Agora o Nginx encontrava o arquivo mas falhava ao entregá-lo ao PHP-FPM — desalinhamento entre a configuração de <code>root</code> e o <code>fastcgi_param</code>. Simplificar a configuração e apontar a raiz diretamente pra pasta do <code>index.php</code> resolveu.</p>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post7_phpinfo.png" alt="phpInfo()"  loading="lazy" /></p>
+<p>A tela branca foi substituída pelo <code>phpinfo()</code>.</p>
+<hr>
+<h2>A conexão final<span class="hx:absolute hx:-mt-20" id="a-conexão-final"></span>
+    <a href="#a-conex%c3%a3o-final" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>O último passo foi um script de teste conectando os três componentes:</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$pdo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="s1">&#39;pgsql:host=localhost;dbname=postgres&#39;</span><span class="p">,</span> <span class="s1">&#39;postgres&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">echo</span> <span class="s2">&#34;Conexão com o PostgreSQL bem-sucedida!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">PDOException</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">echo</span> <span class="s2">&#34;Erro: &#34;</span> <span class="o">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><img src="https://servidor-estaticos-ashy.vercel.app/v2/trolismind/post7_psql.png" alt="pqsl"  loading="lazy" /></p>
+<p>Funcionou! </p>
+<hr>
+<h2>O que ficou de aprendizado<span class="hx:absolute hx:-mt-20" id="o-que-ficou-de-aprendizado"></span>
+    <a href="#o-que-ficou-de-aprendizado" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Minha vontade de replicar o ambiente da Fatec se tornou sobre administração de Linux. Cada erro foi uma camada a mais de entendimento de permissões, hierarquia de configuração, inicialização de serviços.</p>
+<p>Hoje, meu “XAMPP caseiro” não é só mais leve ou mais rápido, mas que tudo pra mim ele super compreensível.</p>
+<p>Se algo quebra, eu sei onde olhar.
+Se preciso mudar algo, eu sei por quê e como.</p>
+<p>Nao se para os outros mais para mim isso vale mais do que qualquer programa pronto.</p>
 <hr>
 
 <div
@@ -550,22 +559,17 @@
   
   <span
     class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
-    >#deploy</span
+    >#dev-web</span
   >
   
   <span
     class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
-    >#ci-cd</span
+    >#DIY</span
   >
   
   <span
     class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
-    >#devops</span
-  >
-  
-  <span
-    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
-    >#boas-praticas</span
+    >#linux</span
   >
   
 </div>
