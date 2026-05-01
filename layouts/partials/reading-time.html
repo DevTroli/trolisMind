@@ -1,0 +1,50 @@
+{{- $raw := .Page.RawContent -}}
+{{- $lines := split $raw "\n" -}}
+
+{{- $proseWords := 0 -}}
+{{- $codeWords := 0 -}}
+{{- $imgCount := 0 -}}
+{{- $inCode := false -}}
+
+{{- range $lines -}}
+  {{- $trimmed := strings.TrimSpace . -}}
+
+  {{- if and (not $inCode) (strings.HasPrefix $trimmed "```") -}}
+    {{- $inCode = true -}}
+  {{- else if and $inCode (strings.HasPrefix $trimmed "```") -}}
+    {{- $inCode = false -}}
+  {{- else if $inCode -}}
+    {{- $cleaned := replaceRE `\s+` " " (strings.TrimSpace .) -}}
+    {{- if gt (len $cleaned) 0 -}}
+      {{- $codeWords = add $codeWords (len (split $cleaned " ")) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $imgs := findRE `!\[.*?\]\(.*?\)` . -}}
+    {{- $imgCount = add $imgCount (len $imgs) -}}
+    {{- $noImg := replaceRE `!\[.*?\]\(.*?\)` "" . -}}
+    {{- $cleaned := replaceRE `\s+` " " (strings.TrimSpace $noImg) -}}
+    {{- if gt (len $cleaned) 0 -}}
+      {{- $proseWords = add $proseWords (len (split $cleaned " ")) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $prosaPerMin := 200 -}}
+{{- $codigoPerMin := 80 -}}
+{{- $segundosPorImagem := 12 -}}
+
+{{- $minProsa := div (add $proseWords (sub $prosaPerMin 1)) $prosaPerMin -}}
+{{- $minCodigo := div (add $codeWords (sub $codigoPerMin 1)) $codigoPerMin -}}
+{{- $minImagens := div (add (mul $imgCount $segundosPorImagem) 59) 60 -}}
+
+{{- $minutes := add (add $minProsa $minCodigo) $minImagens -}}
+{{- if lt $minutes 1 -}}{{- $minutes = 1 -}}{{- end -}}
+
+<span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~{{ $proseWords }} texto + ~{{ $codeWords }} código + {{ $imgCount }} imagens"
+>
+  ⏱
+  <span>{{ $minutes }}</span>
+  <span>min de leitura</span>
+</span>
