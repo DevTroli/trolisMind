@@ -1,6 +1,6 @@
 title: "Troli's Mind"
 baseURL: "https://trolismind.vercel.app/" 
-languageCode: "pt-BR"
+locale: "pt-BR"
 defaultContentLanguage: "pt-br"
 enableEmoji: true
 
@@ -9,7 +9,7 @@ buildDrafts: false
 # ===== IDIOMAS =====
 languages:
   pt-br:
-    languageName: "Português"
+    label: "Português"
     weight: 1
 
 # ===== OUTPUTS =====
@@ -121,6 +121,14 @@ sitemap:
   changefreq: "monthly"
   priority: 0.5
   filename: "sitemap.xml"
+
+# ===== SECURITY =====
+security:
+  http:
+    urls:
+      - '(?i)^https://cdn\.jsdelivr\.net/.*'
+      - '(?i)^https?://[a-z]'
+      - '! (?i)localhost'
 
 # ===== TAXONOMIAS =====
 taxonomies:
