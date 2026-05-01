@@ -13,6 +13,21 @@
       <description><ul class="posts-list" style="list-style-type: none">
   
   <li>
+    <h3><a href="/posts/2026/04/tempo-de-leitura-hugo/">Tempo de leitura: a feature mais barata do seu blog</a></h3>
+    <small style="color: #9ca3af">
+      30 Apr 2026  |
+      <span>Design</span>
+    </small>
+    
+    <div class="description" style="margin-bottom: 0.5rem">Tempo estimado de leitura não é enfeite — é a menor feature de UX que mais impacta a decisão do leitor. Como implementei no meu blog com Hugo e o que aprendi no caminho.</div>
+     
+    <small style="color: #9ca3af">
+      Tags: <span class="tag">#ux</span><span class="tag">#hugo</span><span class="tag">#tempo-de-leitura</span><span class="tag">#blog</span>
+    </small>
+    
+  </li>
+  
+  <li>
     <h3><a href="/posts/2026/03/xampp-caseiro/">Fiz o meu proprio Xampp (DIY)</a></h3>
     <small style="color: #9ca3af">
       26 Mar 2026  |

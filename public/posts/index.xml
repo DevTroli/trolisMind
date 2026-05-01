@@ -7,6 +7,32 @@
 
     
     <item>
+      <title>Tempo de leitura: a feature mais barata do seu blog</title>
+      <link>http://localhost:1313/posts/2026/04/tempo-de-leitura-hugo/</link>
+      <pubDate>2026-04-30 10:00:00 -0300 -03</pubDate>
+      <description><div
+  class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
+  style="text-align: center; border-bottom: 1px solid var(--gray-200)"
+>
+   Troli | 30 Apr 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~853 texto + ~65 código + 0 imagens"
+>
+  ⏱
+  <span>6</span>
+  <span>min de leitura</span>
+</span>
+  |
+  <span
+    class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
+  >Design</span
+  >
+</div>
+
+<p>Tempo de leitura estimado é a feature mais barata que você pode adicionar ao seu blog e que mais muda o comportamento do leitor. Implementei no Troli&rsquo;s Mind — e descobri que a parte difícil se trata de escolher o número certo e não sobre o algoritmo em si.</p></description>
+    </item>
+    
+    <item>
       <title>Fiz o meu proprio Xampp (DIY)</title>
       <link>http://localhost:1313/posts/2026/03/xampp-caseiro/</link>
       <pubDate>2026-03-26 11:36:32 -0300 -03</pubDate>
@@ -14,15 +40,22 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 26 Mar 2026  |
+   Troli | 26 Mar 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~546 texto + ~51 código + 4 imagens"
+>
+  ⏱
+  <span>5</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Snippets</span
+  >Snippets</span
   >
 </div>
 
-<p>Normalmente o XAMPP e usado no Windows. Mas minha máquina roda Arch Linux. Tudo no Linux ainda mais no arch nao e tao simples quanto baixar e usar um .exe do xampp no windows</p>
-<p>Além de que eu não queria simplesmente instalar o XAMPP e seguir em frente. Queria entender o que ele faz por baixo: um servidor web, um banco de dados, uma linguagem de script — e como esses três conversam.</p></description>
+<p>Normalmente o XAMPP e usado no Windows. Mas minha máquina roda Arch Linux. Tudo no Linux ainda mais no arch nao e tao simples quanto baixar e usar um .exe do xampp no windows</p></description>
     </item>
     
     <item>
@@ -33,16 +66,22 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 19 Mar 2026  |
+   Troli | 19 Mar 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~1030 texto + ~0 código + 0 imagens"
+>
+  ⏱
+  <span>6</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Careernotes</span
+  >Careernotes</span
   >
 </div>
 
-<p>Visita técnica à Oracle no Morumbi, organizada pela Fatec Praia Grande. 13 andares de infraestrutura enterprise, Data Centers, IA Cora propria com andar dedicado e entimento de produtos Oracle como om APEX.</p>
-<h2>A chegada<span class="hx:absolute hx:-mt-20" id="a-chegada"></span>
-    <a href="#a-chegada" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>O Morumbi Business Center impõe respeito antes de você entrar. Treze andares, fachada discreta — mas quando você passa pela recepção e começa a entender o que funciona ali dentro.</p></description>
+<p>Visita técnica à Oracle no Morumbi, organizada pela Fatec Praia Grande. 13 andares de infraestrutura enterprise, Data Centers, IA Cora propria com andar dedicado e entimento de produtos Oracle como om APEX.</p></description>
     </item>
     
     <item>
@@ -53,16 +92,22 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 13 Mar 2026  |
+   Troli | 13 Mar 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~891 texto + ~104 código + 0 imagens"
+>
+  ⏱
+  <span>7</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Design</span
+  >Design</span
   >
 </div>
 
-<p>Primeiro projeto profissional de design: 5 painéis pra stand de feira corporativa, CMYK, 300 PPI, entrega em 2 semanas. Não nada gosto de design, mas fiz. Esse post é sobre o processo de ser ruim em algo novo.</p>
-<h2>Quando o design bate a porta<span class="hx:absolute hx:-mt-20" id="quando-o-design-bate-a-porta"></span>
-    <a href="#quando-o-design-bate-a-porta" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Houve a oportunidade de fazer um projeto simples no papel de design: criar 5 painéis pra um stand de uma feira comercial. Cliente de logística, identidade visual definida, requisitos técnicos claros.</p></description>
+<p>Primeiro projeto profissional de design: 5 painéis pra stand de feira corporativa, CMYK, 300 PPI, entrega em 2 semanas. Não nada gosto de design, mas fiz. Esse post é sobre o processo de ser ruim em algo novo.</p></description>
     </item>
     
     <item>
@@ -73,10 +118,18 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 05 Mar 2026  |
+   Troli | 05 Mar 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~1276 texto + ~40 código + 0 imagens"
+>
+  ⏱
+  <span>8</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Snippets</span
+  >Snippets</span
   >
 </div>
 
@@ -91,17 +144,22 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 17 Feb 2026  |
+   Troli | 17 Feb 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~708 texto + ~19 código + 0 imagens"
+>
+  ⏱
+  <span>5</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Careernotes</span
+  >Careernotes</span
   >
 </div>
 
-<p>Deploy frequente não é sobre CI/CD ou automação. É sobre ver seus projetos tocando a realidade. Hoje isso é criminalmente simples com Vercel, Netlify e afins - e mesmo assim a maioria dos devs ainda deixa tudo apodrecendo no localhost.</p>
-<hr>
-<h2>Botando a cara a tapas<span class="hx:absolute hx:-mt-20" id="botando-a-cara-a-tapas"></span>
-    <a href="#botando-a-cara-a-tapas" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>No <a href="/posts/2026/01/medo-do-fracasso/">primeiro post</a> falei sobre perfeccionismo como medo disfarçado. No <a href="/posts/2026/02/como-fiz-deploy-blog/">segundo</a> documentei como finalmente tirei o Troli&rsquo;s Mind do localhost depois de mais de 1 mês adiando algo que levou 30 minutos.</p></description>
+<p>Deploy frequente não é sobre CI/CD ou automação. É sobre ver seus projetos tocando a realidade. Hoje isso é criminalmente simples com Vercel, Netlify e afins - e mesmo assim a maioria dos devs ainda deixa tudo apodrecendo no localhost.</p></description>
     </item>
     
     <item>
@@ -112,10 +170,18 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 31 Jan 2026  |
+   Troli | 31 Jan 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~1405 texto + ~102 código + 4 imagens"
+>
+  ⏱
+  <span>11</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Snippets</span
+  >Snippets</span
   >
 </div>
 
@@ -130,10 +196,18 @@
   class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
   style="text-align: center; border-bottom: 1px solid var(--gray-200)"
 >
-   Troli | 23 Jan 2026  |
+   Troli | 23 Jan 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~1280 texto + ~0 código + 0 imagens"
+>
+  ⏱
+  <span>7</span>
+  <span>min de leitura</span>
+</span>
+  |
   <span
     class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
-    >Careernotes</span
+  >Careernotes</span
   >
 </div>
 
