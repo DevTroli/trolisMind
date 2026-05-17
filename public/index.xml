@@ -15,6 +15,33 @@
     
     
     <item>
+      <title>Quando a Orquestração de Agents É Otimização Prematura</title>
+      <link>http://localhost:1313/posts/2026/05/otimizacao-prematura/</link>
+      <pubDate>Sun, 17 May 2026 10:39:43 -0300</pubDate>
+      <guid>http://localhost:1313/posts/2026/05/otimizacao-prematura/</guid>
+      <description>&lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 17 May 2026 | &lt;span
+  class=&#34;reading-time inline-flex items-center gap-1.5 text-sm&#34;
+  title=&#34;~1189 texto + ~0 código + 0 imagens&#34;
+&gt;
+  ⏱
+  &lt;span&gt;6&lt;/span&gt;
+  &lt;span&gt;min de leitura&lt;/span&gt;
+&lt;/span&gt;
+  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+  &gt;Rant&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;TL;DR: Montei um pipeline de 5 agents para testar se pipelines de 5 agents agregam valor. Gastei 10 dias e 14 rodadas para descobrir que eu era o caso clássico de otimização prematura. A lição: meça antes de estruturar.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Tempo de leitura: a feature mais barata do seu blog</title>
       <link>http://localhost:1313/posts/2026/04/tempo-de-leitura-hugo/</link>
       <pubDate>Thu, 30 Apr 2026 10:00:00 -0300</pubDate>

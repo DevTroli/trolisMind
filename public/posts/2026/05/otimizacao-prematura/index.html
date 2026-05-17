@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr"><head>
-	<meta name="generator" content="Hugo 0.161.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="pt-br" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
@@ -9,31 +8,42 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Troli&#39;s Mind</title>
-  <meta name="description" content="Backup do meu cérebro tech &#43; laboratório de comunicação" /><link rel="canonical" href="http://localhost:1313/" itemprop="url" />
+<title>Quando a Orquestração de Agents É Otimização Prematura – Troli&#39;s Mind</title>
+  <meta name="description" content="14 runs, 3 linguagens, 10 dias. Por que eu passei esse tempo testando numa jornada sobre orquestração de agents" /><link rel="canonical" href="http://localhost:1313/posts/2026/05/otimizacao-prematura/" itemprop="url" />
 
-<meta property="og:title" content="Troli&#39;s Mind">
+<meta property="og:title" content="Quando a Orquestração de Agents É Otimização Prematura">
 <meta
   property="og:description"
   content="
-    Backup do meu cérebro tech &#43; laboratório de comunicação
+    14 runs, 3 linguagens, 10 dias. Por que eu passei esse tempo testando numa jornada sobre orquestração de agents
   ">
 <meta
   property="og:type"
   content="
-    website
+    article
   ">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="http://localhost:1313/posts/2026/05/otimizacao-prematura/"><meta property="article:section" content="posts">
+
+<meta
+  property="article:published_time"
+  content="2026-05-17T10:39:43-03:00">
 
 
-  <meta itemprop="name" content="Troli&#39;s Mind">
-  <meta itemprop="description" content="Backup do meu cérebro tech &#43; laboratório de comunicação">
+<meta
+  property="article:modified_time"
+  content="2026-05-17T10:39:43-03:00">
+
+
+
+  <meta itemprop="name" content="Quando a Orquestração de Agents É Otimização Prematura">
+  <meta itemprop="description" content="14 runs, 3 linguagens, 10 dias. Por que eu passei esse tempo testando numa jornada sobre orquestração de agents">
   <meta itemprop="datePublished" content="2026-05-17T10:39:43-03:00">
   <meta itemprop="dateModified" content="2026-05-17T10:39:43-03:00">
-  <meta itemprop="wordCount" content="173">
+  <meta itemprop="wordCount" content="1180">
+  <meta itemprop="keywords" content="Benchmark-Agents,Llm,A.I">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Troli&#39;s Mind">
-  <meta name="twitter:description" content="Backup do meu cérebro tech &#43; laboratório de comunicação">
+  <meta name="twitter:title" content="Quando a Orquestração de Agents É Otimização Prematura">
+  <meta name="twitter:description" content="14 runs, 3 linguagens, 10 dias. Por que eu passei esse tempo testando numa jornada sobre orquestração de agents">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -200,7 +210,7 @@
     <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
       
       
-          <li class=""><a
+          <li class="open"><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
     href="/posts/"
@@ -208,13 +218,58 @@
   >Posts
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
     </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
-        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><a
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
     href="/posts/2026/05/otimizacao-prematura/"
     
   >Quando a Orquestração de Agents É Otimização Prematura
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#o-que-eu-fiz-de-errado"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O Que Eu Fiz de Errado</a>
+            </li>
+          <li>
+              <a
+                href="#o-que-14-runs-mostraram"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O Que 14 Runs Mostraram</a>
+            </li>
+          <li>
+              <a
+                href="#o-pico-dos-dados"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O Pico dos dados</a>
+            </li>
+          <li>
+              <a
+                href="#o-paralelo-com-c%c3%b3digo"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O Paralelo com Código</a>
+            </li>
+          <li>
+              <a
+                href="#pipeline-aprende-solo-esquece"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Pipeline Aprende. Solo Esquece.</a>
+            </li>
+          <li>
+              <a
+                href="#o-que-eu-deveria-ter-deduzido-sozinho"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >O que Eu Deveria Ter Deduzido Sozinho</a>
+            </li>
+          <li>
+              <a
+                href="#fontes"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Fontes</a>
+            </li>
+          </ul>
+  
               
             </li><li class="hx:flex hx:flex-col "><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -353,15 +408,31 @@
 <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%c3%baltimos-posts">Últimos Posts
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-que-eu-fiz-de-errado">O Que Eu Fiz de Errado
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#se%c3%a7%c3%b5es-editoriais">Seções editoriais
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-que-14-runs-mostraram">O Que 14 Runs Mostraram
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#princ%c3%adpios">Princípios
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-pico-dos-dados">O Pico dos dados
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-paralelo-com-c%c3%b3digo">O Paralelo com Código
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#pipeline-aprende-solo-esquece">Pipeline Aprende. Solo Esquece.
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#o-que-eu-deveria-ter-deduzido-sozinho">O que Eu Deveria Ter Deduzido Sozinho
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#fontes">Fontes
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
@@ -380,89 +451,112 @@
       <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
         
         <br class="hx:mt-1.5 hx:text-sm" />
-        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Troli&#39;s Mind</h1>
+        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Quando a Orquestração de Agents É Otimização Prematura</h1>
         <div class="hx:mb-16"></div>
         <div class="content">
-          <h3>Últimos Posts<span class="hx:absolute hx:-mt-20" id="últimos-posts"></span>
-    <a href="#%c3%baltimos-posts" class="subheading-anchor" aria-label="Permalink for this section"></a></h3>   
+          <div
+  class="hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400"
+  style="text-align: center; border-bottom: 1px solid var(--gray-200)"
+>
+   Troli | 17 May 2026 | <span
+  class="reading-time inline-flex items-center gap-1.5 text-sm"
+  title="~1189 texto + ~0 código + 0 imagens"
+>
+  ⏱
+  <span>6</span>
+  <span>min de leitura</span>
+</span>
+  |
+  <span
+    class="hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs"
+  >Rant</span
+  >
+</div>
 
-<div class="recent-posts">
+<p>TL;DR: Montei um pipeline de 5 agents para testar se pipelines de 5 agents agregam valor. Gastei 10 dias e 14 rodadas para descobrir que eu era o caso clássico de otimização prematura. A lição: meça antes de estruturar.</p>
+<p>Entrei no mundo das LLMs quando o código-fonte do Claude Code vazou. Testei o OpenClaude — era mais interessante do que eu imaginava. Com isso em mente, criei agents para cada etapa do meu fluxo de desenvolvimento. Para automatizar tudo, montei um pipeline de 5 agents. Para testar se pipeline de 5 agents agrega valor. Sem perceber que eu era o exato caso de uso do meu próprio benchmark. Quando me toquei disso, já tinha feito 14 rodadas de testes, usado 3 linguagens durante uns 10 dias.</p>
+<hr>
+<p>Quando descobri a orquestração de agentes, minha primeira reação foi imediata: &ldquo;Vou usar pipelines para tudo&rdquo;. Por que usar um agente se posso usar cinco especializados em um fluxo elegante? Parecia o futuro. Precisei de 10 dias e 14 rodadas de testes para aprender que o simples funciona muito bem.</p>
+<p>Donald Knuth já alertava em seu clássico artigo de 1974 que a otimização prematura é a raiz de todo o mal. Ele falava sobre a escrita de código, mas a regra se aplica a qualquer coisa relacionada: focar em eficiências complexas antes da hora cobra o seu preço em tempo e legibilidade.</p>
+<h2>O Que Eu Fiz de Errado<span class="hx:absolute hx:-mt-20" id="o-que-eu-fiz-de-errado"></span>
+    <a href="#o-que-eu-fiz-de-errado" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Eu otimizei o <strong>processo</strong> antes de validar se o processo precisava de otimização. Montei um pipeline de 5 estágios — architect → codebase → code → refactor → write — e assumi que mais estrutura sempre equivale a melhor resultado.</p>
+<p>Não medi. Não comparei. Só assumi.</p>
+<p>A ironia só bateu depois: eu montei um pipeline de 5 agents <em>para testar se pipeline de 5 agents agrega valor</em>. A pesquisa em si era um caso de otimização prematura.</p>
+<p>Eu fui, literalmente, a pessoa que mais precisava do meu próprio benchmark.</p>
+<h2>O Que 14 Runs Mostraram<span class="hx:absolute hx:-mt-20" id="o-que-14-runs-mostraram"></span>
+    <a href="#o-que-14-runs-mostraram" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Depois de 14 runs, 3 linguagens, 3 repetições por tier, e 19.600 linhas de código geradas, a realidade foi mais nuançada do que minha empolgação inicial:</p>
+<p><strong>Fácil (PHP — calculadora básica):</strong> Pipeline entrega +9.8pts em score, mas custa 5.1x mais tempo. Overhead puro. Você está pagando por uma estrutura que a tarefa não exige.</p>
+<p><strong>Médio (Go — habit tracker com TUI):</strong> Solo é melhor <em>e</em> mais rápido. Pipeline melhora com repetição, mas nunca alcança o desempenho do Solo nesse tier. A estrutura adiciona custo sem proporcionar benefício equivalente.</p>
+<p><strong>Difícil (Rust — sistema de leilões concorrentes):</strong> Pipeline entrega +24pts. Zero bugs críticos em 6 runs. Solo travou em 100% das tentativas iniciais e gerou bugs críticos em mais da metade das execuções.</p>
+<p>Eu tinha certeza de que pipeline era melhor para tudo. Na verdade, pipeline só é indispensável onde o custo do bug é alto.</p>
+<h2>O Pico dos dados<span class="hx:absolute hx:-mt-20" id="o-pico-dos-dados"></span>
+    <a href="#o-pico-dos-dados" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Solo cai <strong>32 pontos</strong> entre Médio e Difícil: de 89 para 57. Pipeline cai apenas <strong>3 pontos</strong>: de 84 para 81.</p>
+<p>Quando a complexidade cruza o limiar entre Médio e Difícil, Solo não degrada gradualmente — ele colapsa. Pipeline mantém o nível quase intacto. O que muda entre os dois tiers? Bugs que só aparecem em situações que o modelo não consegue prever sozinho, sem estrutura forçada de processo.</p>
+<p>Em Go, o habit tracker tem contratos óbvios: criar hábito, marcar dia, ver progresso. Os bugs são visíveis, o domínio cabe no context window. Em Rust, o sistema de leilões exige state machine (Aberto→Fechado/Cancelado), <code>Arc&lt;Mutex&gt;</code> thread-safe, f64 rounding para aritmética monetária. É exatamente nos edge cases que ninguém pensa espontaneamente que o audit agent faz a diferença. O audit agent pensa neles. O Solo não.</p>
+<h2>O Paralelo com Código<span class="hx:absolute hx:-mt-20" id="o-paralelo-com-código"></span>
+    <a href="#o-paralelo-com-c%c3%b3digo" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Tarefa simples:</strong> O gargalo é latência de coordenação. Pipeline adiciona 5 agentes onde 1 bastava. O overhead de coordenação consome qualquer ganho hipotético de especialização.</p>
+<p><strong>Tarefa média:</strong> O gargalo é velocidade de execução pura. Solo já entrega zero bugs nesse tier; pipeline só adiciona overhead de ~1.5x sem contrapartida em qualidade.</p>
+<p><strong>Tarefa complexa:</strong> O gargalo é falta de estrutura. Solo se perde em state machines, concorrência, invariantes implícitos que precisam ser rastreados simultaneamente. Pipeline fornece o esqueleto que falta — e o audit agent pensa nos edge cases que o Solo esquece.</p>
+<p>Otimizar o gargalo errado piorou os resultados. Eu otimizei coordenação quando o gargalo real era velocidade. O problema é que eu não sabia distinguir um do outro antes de medir.</p>
+<h2>Pipeline Aprende. Solo Esquece.<span class="hx:absolute hx:-mt-20" id="pipeline-aprende-solo-esquece"></span>
+    <a href="#pipeline-aprende-solo-esquece" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Um dado que eu genuinamente não esperava: Pipeline Rep2 sistematicamente supera Rep1 <strong>sem nenhuma intervenção humana</strong> — Fácil +1pt, Médio +6pts, Difícil +6pts. O architect agent lê o audit da run anterior e incorpora as lições no plano seguinte, automaticamente.</p>
+<p>Na Rep2 Difícil, zero bugs críticos — porque as 5 lições catalogadas no audit da Rep1 foram preventivamente resolvidas no design antes do primeiro arquivo ser escrito. Solo também melhora entre repetições (46→50→74), mas requer engenharia de prompt manual: um humano lendo código, catalogando o que deu errado, reescrevendo instruções. Pipeline aprende sozinho. Isso muda o cálculo: pipeline não é só mais seguro em tasks complexas — é mais <strong>escalável</strong> sem aumentar o esforço humano.</p>
+<h2>O que Eu Deveria Ter Deduzido Sozinho<span class="hx:absolute hx:-mt-20" id="o-que-eu-deveria-ter-deduzido-sozinho"></span>
+    <a href="#o-que-eu-deveria-ter-deduzido-sozinho" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Se eu pudesse voltar ao dia zero, teria começado com Solo + revisão manual. Antes de montar qualquer pipeline, testaria Solo, revisaria o resultado com meus próprios olhos, catalogaria o que deu errado. Se a revisão manual encontrasse os mesmos bugs que o audit agent encontra automaticamente, eu saberia que pipeline agrega valor de automação — não de qualidade. E poderia justificar o custo de setup com evidência real.</p>
+<p>Mas precisei dessa jornada inteira pra chegar nessa conclusão. E o benchmark justificou a si mesmo — só porque eu medi em vez de assumir.</p>
+<p>Eu poderia ter começado com 2 agents — um para planejar, um para executar — e chegado às mesmas conclusões com metade do esforço de setup.</p>
+<p>Se o custo do bug é baixo, use Solo. Se é alto, use Pipeline. Se não sabe, meça.</p>
+<blockquote>
+  <p>Se a tarefa cabe na sua cabeça, um agente basta.
+Se a tarefa não cabe na sua cabeça, estruturar o prompt ajuda.
+Se está no meio termo: meça antes de decidir.</p>
+
+</blockquote>
+<p>É o que Knuth diria sobre agents. É o que 14 runs confirmaram.</p>
+<p>Otimização prematura em agents é sobre não perguntar <em>&ldquo;quanto custa o bug?&rdquo;</em> antes de decidir quantos agents você precisa.</p>
+<hr>
+<h2>Fontes<span class="hx:absolute hx:-mt-20" id="fontes"></span>
+    <a href="#fontes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><a href="https://dl.acm.org/doi/10.1145/356635.356640"target="_blank" rel="noopener">Structured Programming with go to Statements</a> — Donald Knuth, 1974</li>
+<li><a href="https://github.com/DevTroli/benchmark-pipeline-vs-solo"target="_blank" rel="noopener">github.com/DevTroli/benchmark-pipeline-vs-solo</a> — dados brutos do benchmark</li>
+</ul>
+<hr>
+<p><strong>Leia também nesta série:</strong></p>
+<ul>
+<li><a href="https://blog.pablotroli.com/posts/2026/05/pipeline-vs-solo/"target="_blank" rel="noopener">Benchmark agent solo vs multiagent</a> — o benchmark completo com dados de todas as 14 runs</li>
+<li><a href="https://blog.pablotroli.com/posts/2026/06/colapsa-ou-funciona/"target="_blank" rel="noopener">A Linha Tênue Entre &ldquo;Funciona&rdquo; e &ldquo;Colapsa&rdquo;</a> — por que Solo cai 32 pontos e Pipeline cai 3 no mesmo salto de complexidade</li>
+<li><a href="/posts/2026/06/economia-do-bug/">Toda Decisão de Engenharia é Econômica</a> — o framework custo(audit) vs custo(bug) aplicado a qualquer decisão técnica</li>
+<li><a href="/posts/2026/06/prompt-ou-pipeline/">Posso Só Melhorar o Prompt?</a> — sim, mas você não vai querer quando ver o custo invisível</li>
+</ul>
+<p><em>Dados brutos e logs completos: <a href="https://github.com/DevTroli/benchmark-pipeline-vs-solo"target="_blank" rel="noopener">github.com/DevTroli/benchmark-pipeline-vs-solo</a></em></p>
+<hr>
+
+<div
+  class="hx-mt-8 hx-pt-6 hx-border-t hx-border-gray-200 dark:hx-border-gray-800"
+>
+  <span
+    class="hx-text-sm hx-font-semibold hx-text-gray-700 dark:hx-text-gray-300"
+    >Tags:
+  </span>
   
-  <article class="post-card">
-    <h5><a href="/posts/2026/05/otimizacao-prematura/">Quando a Orquestração de Agents É Otimização Prematura</a></h5>
-    <div class="post-meta">
-      <time>17 May 2026 </time>
-      
-      <span class="post-type">| Rant</span>
-      
-    </div>
-  </article>
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#benchmark-agents</span
+  >
   
-  <article class="post-card">
-    <h5><a href="/posts/2026/04/tempo-de-leitura-hugo/">Tempo de leitura: a feature mais barata do seu blog</a></h5>
-    <div class="post-meta">
-      <time>30 Apr 2026 </time>
-      
-      <span class="post-type">| Design</span>
-      
-    </div>
-  </article>
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#llm</span
+  >
   
-  <article class="post-card">
-    <h5><a href="/posts/2026/03/xampp-caseiro/">Fiz o meu proprio Xampp (DIY)</a></h5>
-    <div class="post-meta">
-      <time>26 Mar 2026 </time>
-      
-      <span class="post-type">| Snippets</span>
-      
-    </div>
-  </article>
-  
-  <article class="post-card">
-    <h5><a href="/posts/2026/03/visita-tecnica-oracle/">Na Oracle: Percebi o quanto preciso crescer/estudar</a></h5>
-    <div class="post-meta">
-      <time>19 Mar 2026 </time>
-      
-      <span class="post-type">| Careernotes</span>
-      
-    </div>
-  </article>
-  
-  <article class="post-card">
-    <h5><a href="/posts/2026/03/odeio-design/">Design é um problema técnico. Trate como tal.</a></h5>
-    <div class="post-meta">
-      <time>13 Mar 2026 </time>
-      
-      <span class="post-type">| Design</span>
-      
-    </div>
-  </article>
-  
-  <article class="post-card">
-    <h5><a href="/posts/2026/03/hub-pablotroli/">Hub Pablotroli.com</a></h5>
-    <div class="post-meta">
-      <time>05 Mar 2026 </time>
-      
-      <span class="post-type">| Snippets</span>
-      
-    </div>
-  </article>
+  <span
+    class="hx-inline-block hx-px-2 hx-py-1 hx-mr-2 hx-text-sm hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded"
+    >#A.I</span
+  >
   
 </div>
 
-<p><a href="/posts/">Ver todos os posts →</a></p>
-<hr>
-<h3>Seções editoriais<span class="hx:absolute hx:-mt-20" id="seções-editoriais"></span>
-    <a href="#se%c3%a7%c3%b5es-editoriais" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><a href="/posttype/rant/">🔥 RANT</a>  <a href="/posttype/deepdives/">🏗️ DeepDives</a>  <a href="/posttype/careernotes/">🎯 CareerNotes</a>  <a href="/posttype/snippets/">💾 Snippets</a>  <a href="/posttype/design/">👥 Design</a>  <a href="/posttype/library/">📚 Library</a></p>
-<h3>Princípios<span class="hx:absolute hx:-mt-20" id="princípios"></span>
-    <a href="#princ%c3%adpios" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Missão:</strong> Um blog pessoal que funcione como um &ldquo;Grail Diary&rdquo; tecnológico, combinando deep-dives técnicos com experiências pessoais, servindo como ferramenta de desenvolvimento de comunicação e portfolio vivo para a comunidade tech.</p>
-<p><strong>Proposta de Valor:</strong> Oferecer os &ldquo;20% de conhecimento sólido&rdquo; que resolvem &ldquo;80% dos problemas&rdquo; através de conteúdo que vai além dos tutoriais superficiais, conectando teoria rigorosa com experiência prática real.</p>
-<p><a href="/principios/">📖 Conheça os princípios do blog →</a></p>
-<blockquote>
-  <p>&ldquo;O blog perfeito não existe — just fucking write!&rdquo;<br>
-— Fabio Akita</p>
 
-</blockquote>
 
         </div>
         <div class="hx:mt-16"></div>
