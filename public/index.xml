@@ -15,6 +15,33 @@
     
     
     <item>
+      <title>Quanto custa o bug?</title>
+      <link>http://localhost:1313/posts/2026/06/pipeline-vs-solo/</link>
+      <pubDate>Tue, 23 Jun 2026 17:38:26 -0300</pubDate>
+      <guid>http://localhost:1313/posts/2026/06/pipeline-vs-solo/</guid>
+      <description>&lt;div
+  class=&#34;hx-mb-6 hx-pb-3 hx-text-sm hx-text-gray-600 dark:hx-text-gray-400&#34;
+  style=&#34;text-align: center; border-bottom: 1px solid var(--gray-200)&#34;
+&gt;
+   Troli | 23 Jun 2026 | &lt;span
+  class=&#34;reading-time inline-flex items-center gap-1.5 text-sm&#34;
+  title=&#34;~1228 texto + ~0 código + 0 imagens&#34;
+&gt;
+  ⏱
+  &lt;span&gt;7&lt;/span&gt;
+  &lt;span&gt;min de leitura&lt;/span&gt;
+&lt;/span&gt;
+  |
+  &lt;span
+    class=&#34;hx-px-2 hx-py-0.5 hx-bg-gray-100 dark:hx-bg-gray-800 hx-rounded hx-text-xs&#34;
+  &gt;Deepdives&lt;/span
+  &gt;
+&lt;/div&gt;
+
+&lt;p&gt;Depois do último post me deu uma sobrecarga enorme desse papo de I.A, mas agora recarreguei as baterias e continuarei com a saga, que vai totalizar 5 posts, esse sendo o segundo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Quando a Orquestração de Agents É Otimização Prematura</title>
       <link>http://localhost:1313/posts/2026/05/otimizacao-prematura/</link>
       <pubDate>Sun, 17 May 2026 10:39:43 -0300</pubDate>

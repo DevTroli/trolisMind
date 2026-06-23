@@ -97,7 +97,7 @@ Otimização prematura em agents é sobre não perguntar _"quanto custa o bug?"_
 
 **Leia também nesta série:**
 
-- [Benchmark agent solo vs multiagent](https://blog.pablotroli.com/posts/2026/05/pipeline-vs-solo/) — o benchmark completo com dados de todas as 14 runs
+- [Benchmark agent solo vs multiagent](https://blog.pablotroli.com/posts/2026/06/pipeline-vs-solo/) — o benchmark completo com dados de todas as 14 runs
 - [A Linha Tênue Entre "Funciona" e "Colapsa"](https://blog.pablotroli.com/posts/2026/06/colapsa-ou-funciona/) — por que Solo cai 32 pontos e Pipeline cai 3 no mesmo salto de complexidade
 - [Toda Decisão de Engenharia é Econômica](/posts/2026/06/economia-do-bug/) — o framework custo(audit) vs custo(bug) aplicado a qualquer decisão técnica
 - [Posso Só Melhorar o Prompt?](/posts/2026/06/prompt-ou-pipeline/) — sim, mas você não vai querer quando ver o custo invisível

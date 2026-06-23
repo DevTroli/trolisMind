@@ -2,6 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/a.i/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/benchmark-agents/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/deepdives/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/llm/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/06/pipeline-vs-solo/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-23T17:38:26-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/05/otimizacao-prematura/</loc>
+    <lastmod>2026-05-17T10:39:43-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posttype/rant/</loc>
+    <lastmod>2026-05-17T10:39:43-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2026-04-30T10:00:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,27 +67,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posttype/</loc>
-    <lastmod>2026-04-30T10:00:00-03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-30T10:00:00-03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/posts/2026/04/tempo-de-leitura-hugo/</loc>
     <lastmod>2026-04-30T10:00:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/tempo-de-leitura/</loc>
-    <lastmod>2026-04-30T10:00:00-03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-30T10:00:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -207,19 +242,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posttype/deepdives/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/posttype/library/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/principios/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posttype/rant/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
